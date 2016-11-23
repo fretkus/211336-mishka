@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анна Терехова](https://up.htmlacademy.ru/adaptive/9/user/211336).
-* Наставник: `Неизвестно`.
+* Наставник: [Маргарита Игнатьева](https://htmlacademy.ru/profile/id41571).
 
 ---
 
