@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка - Каталог</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__logo">
+        <img src="http://placehold.it/86x35" width="86" height="35" alt="Мишка">
+      </div>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+          <li class="main-nav__item  main-nav__item--search"><a href="#">Поиск по сайту</a></li>
+          <li class="main-nav__item  main-nav__item--cart"><a href="#">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container  catalog-page">
+      <h1 class="catalog-page__title">Каталог товаров</h1>
+      <article class="catalog-item__wrapper">
+        <a class="catalog-item__link" href="#">
+          <img class="catalog-item__img" src="http://placehold.it/260x195" width="260" height="195" alt="Зайчик-попрыгайчик">
+          <h2 class="catalog-item__title">Зайчик-попрыгайчик</h2>
+          <p class="catalog-item__description">Рост 30 см, вес 200 г</p>
+          <p class="catalog-item__price">1200 руб.</p>
+          <span class="catalog-item__order">Заказать</span>
+        </a>
+      </article>
+      <article class="catalog-item__wrapper">
+        <a class="catalog-item__link" href="#">
+          <img class="catalog-item__img" src="http://placehold.it/260x195" width="260" height="195" alt="Корзинка для белья">
+          <h2 class="catalog-item__title">Корзинка для белья</h2>
+          <p class="catalog-item__description">Диаметр 15 см, высота 10 см</p>
+          <p class="catalog-item__price">690 руб.</p>
+          <span class="catalog-item__order">Заказать</span>
+        </a>
+      </article>
+      <article class="catalog-item__wrapper">
+        <a class="catalog-item__link" href="#">
+          <img class="catalog-item__img" src="http://placehold.it/260x195" width="260" height="195" alt="Большая корзинка для игрушек">
+          <h2 class="catalog-item__title">Большая корзинка для игрушек</h2>
+          <p class="catalog-item__description">Диаметр 30 см, высота 30 см</p>
+          <p class="catalog-item__price">1500 руб.</p>
+          <span class="catalog-item__order">Заказать</span>
+        </a>
+      </article>
+      <section class="catalog-video">
+        <h2 class="catalog-video__title">Процесс производства</h2>
+        <video class="catalog-video__player" width="260" height="150" poster="http://placehold.it/260x150" controls></video>
+        <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="btn  catalog-video__order" href="#">Сделать заказ</a>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__social">
+        <ul class="social-links">
+          <li class="social-link  social-link--inst"><a href="#">Instagram</a></li>
+          <li class="social-link  social-link--fb"><a href="#">Facebook</a></li>
+          <li class="social-link  social-link--tw"><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+      <p class="page-footer__copyright">
+        Разработано:
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
+      </p>
+    </footer>
+    <div class="cart-popup">
+      <h2 class="cart-popup__title">Добавить в корзину</h2>
+      <form class="cart-popup__form" action="#" method="post">
+        <p class="cart-popup__choise">Выберите размер:</p>
+        <input class="cart-popup__input" type="radio" name="size" value="size-s" id="size-s" checked>
+        <label class="cart-popup__label" for="size-s">S</label>
+        <input class="cart-popup__input" type="radio" name="size" value="size-m" id="size-m">
+        <label class="cart-popup__label" for="size-m">M</label>
+        <input class="cart-popup__input" type="radio" name="size" value="size-l" id="size-l">
+        <label class="cart-popup__label" for="size-l">L</label>
+        <input class="cart-popup__btn" type="submit" value="Добавить">
+      </form>
+    </div>
+    <div class="overlay"></div>
+  </body>
+</html>
