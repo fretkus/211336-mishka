@@ -25,7 +25,7 @@
   text-transform: uppercase;
 }
 
-.order-form__legend--line {
+.order-form__line {
   position: relative;
 
   &::before {
@@ -40,7 +40,7 @@
   }
 }
 
-.order-form__legend--line--short {
+.order-form__line--short {
   position: relative;
 
   &::after {
