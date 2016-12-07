@@ -1,0 +1,32 @@
+.main-nav {
+  position: relative;
+  outline: 1px solid blue;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: -15%;
+  left: 80%;
+}
+
+.main-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav__item {
+  border-bottom: 1px solid #ececec;
+}
+
+.main-nav__item a {
+  display: block;
+  box-sizing: border-box;
+  height: 80px;
+  padding: 30px 60px;
+  font-size: 17px;
+  line-height: 1.4em;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+}

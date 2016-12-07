@@ -1,0 +1,121 @@
+.order-form__groups {
+  padding: 1px 30px 30px 30px;
+  outline: 1px solid blue;
+}
+
+.order-form__group,
+.order-form__group--text {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: 1px solid green;
+}
+
+.order-form__group--text {
+  padding-bottom: 30px;
+}
+
+.order-form__legend {
+  font-size: 17px;
+  line-height: 0.9em;
+  font-weight: 700;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+.order-form__line {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 60px;
+    top: 10px;
+    height: 1px;
+    width: 198px;
+    background: #63d1bb;
+  }
+}
+
+.order-form__line--short {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 60px;
+    top: 10px;
+    height: 2px;
+    width: 23px;
+    background: #ffffff;
+  }
+}
+
+.order-form__group input {
+  display: none;
+}
+
+.order-form__label {
+  display: block;
+  margin-left: 63px;
+  margin-bottom: 43px;
+  font-size: 17px;
+  line-height: 1.1em;
+  font-weight: 700;
+  color: #000000;
+  outline: 1px solid red;
+}
+
+.order-form__group--text .order-form__text {
+  display: block;
+  padding-bottom: 18px;
+  margin: 0;
+
+  font-size: 17px;
+  line-height: 1.1em;
+  border: none;
+  border-bottom: 2px solid #000000;
+}
+
+.order-form__group--text .order-form__label {
+  margin-top: 30px;
+  margin-bottom: 16px;
+  margin-left: 0;
+}
+
+.order-form__group--text .order-form__text--tel,
+.order-form__group--text .order-form__text--email,
+.order-form__group--text .order-form__textarea {
+  display: block;
+  margin-top: 20px;
+}
+
+.order-form__textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 141px;
+  padding-top: 17px;
+  padding-left: 17px;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.1em;
+  border: 2px solid #444444;
+  resize: none;
+}
+
+.order-form__caption {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.1em;
+  outline: 1px solid red;
+}
+
+.order-form__order {
+  margin-bottom: 28px;
+  background: #ffffff;
+}

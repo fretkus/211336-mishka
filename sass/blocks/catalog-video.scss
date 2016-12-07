@@ -1,0 +1,33 @@
+.catalog-video {
+  margin: 0 30px;
+  margin-bottom: 58px;
+  border: 1px solid #ececec;
+}
+
+.catalog-video__title {
+  padding: 30px 40px 27px 90px;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.4em;
+  font-weight: 700;
+  color: #000000;
+}
+
+.catalog-video__player {
+  width: 260px;
+  height: 150px;
+}
+
+.catalog-video p {
+  margin-top: -6px;
+  padding: 30px;
+  padding-bottom: 0;
+  font-size: 13px;
+  line-height: 1.8em;
+}
+
+.catalog-video__order {
+  width: 192px;
+  margin: 30px auto;
+  text-decoration: none;
+}

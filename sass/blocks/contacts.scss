@@ -1,0 +1,26 @@
+.contacts {
+  padding: 1px 0 39px 0;
+  outline: 1px solid blue;
+}
+
+.contacts__title {
+  margin: 40px 0 40px 30px;
+  font-size: 18px;
+  line-height: 1.7em;
+  font-weight: 700;
+  color: #000000;
+  outline: 1px solid red;
+}
+
+.contacts__items {
+  margin: 0 30px 40px 30px;
+  font-size: 15px;
+  line-height: 2em;
+  outline: 1px solid red;
+}
+
+.contacts__write {
+  margin-top: 39px;
+  margin-left: 30px;
+  text-decoration: none;
+}

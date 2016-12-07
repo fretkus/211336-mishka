@@ -1,0 +1,50 @@
+.production {
+  padding: 1px 0 35px 30px;
+  margin: 0;
+  outline: 1px solid blue;
+}
+
+.production__title {
+  font-size: 25px;
+  line-height: 1.2em;
+  font-weight: 700;
+  color: #000000;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  outline: 1px solid red;
+}
+
+.production__caption {
+  font-size: 17px;
+  line-height: 0.9em;
+  font-weight: 700;
+  color: #63d1bb;
+  outline: 1px solid red;
+}
+
+.production__description {
+  margin: 30px 40px 30px 0;
+  outline: 1px solid red;
+}
+
+.production__items-for-sale {
+  margin-bottom: 29px;
+  outline: 1px solid red;
+}
+
+.production__img {
+  margin-bottom: 27px;
+}
+.production__price {
+  font-size: 17px;
+  line-height: 1.4em;
+  font-weight: 700;
+  color: #444444;
+  text-align: center;
+  margin-bottom: 27px;
+  outline: 1px solid red;
+}
+
+.production__order {
+  text-decoration: none;
+}
