@@ -59,9 +59,21 @@
     flex-direction: row;
     justify-content: center;
     @include ul-reset;
+    @include tablet-container;
   }
 
   .index-top__item {
-    width: 100%;
+    width: 334px;
+  }
+}
+
+@media ($desktop-widths) {
+  .index-top__list {
+    @include ul-reset;
+    @include desktop-container;
+  }
+
+  .index-top__item {
+    width: 525px;
   }
 }

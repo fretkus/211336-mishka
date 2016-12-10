@@ -55,6 +55,7 @@
   font-weight: 700;
   color: #000000;
   text-decoration: none;
+  @include mobile-container;
 }
 
 @media ($tablet-widths) {
@@ -135,7 +136,6 @@
       right: 0;
       padding: 0 50px 0 83px;
       border-right: 0;
-
     }
   }
 }
