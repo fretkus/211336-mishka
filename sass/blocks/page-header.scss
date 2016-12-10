@@ -1,10 +1,47 @@
 .page-header {
-  outline: 1px solid red;
+  position: relative;
+  min-width: 320px;
 }
 
 .page-header__logo {
-  width: 86px;
-  height: 36px;
+  box-sizing: border-box;
+  width: 320px;
+  min-height: 79px;
   padding: 22px 115px;
   margin: 0 auto;
+}
+
+.page-header__logo a {
+  display: block;
+  text-align: center;
+}
+
+@media ($tablet-widths) {
+  .page-header {
+    position: relative;
+  }
+
+  .page-header__logo {
+    min-height: 89px;
+  }
+
+  .page-header__logo a {
+    position: absolute;
+    left: 50px;
+  }
+}
+
+@media ($desktop-widths) {
+  .page-header {
+    border-bottom: 1px solid #ececec;
+  }
+
+  .page-header__logo {
+    position: relative;
+  }
+
+  .page-header__logo a {
+    position: absolute;
+    left: 115px;
+  }
 }
