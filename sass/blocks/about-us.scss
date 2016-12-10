@@ -1,31 +1,153 @@
 .about-us {
-  padding-top: 1px;
+  padding: 32px 30px 35px 30px;
   padding-bottom: 58px;
   outline: 1px solid blue;
  }
 
 .about-us__title {
-  margin-top: 32px;
-  margin-left: 30px;
   font-size: 25px;
   line-height: 1.2em;
   font-weight: 700;
   color: #000000;
+  @include mobile-container;
   outline: 1px solid red;
 }
 
 .about-us__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  @include ul-reset;
+  @include mobile-container;
 }
 
 .about-us__item {
-  margin: 0 30px;
+  margin: 0;
   padding-top: 83px;
   font-size: 17px;
   line-height: 1.3em;
   font-weight: 700;
   color: #000000;
   outline: 1px solid red;
+}
+
+@media ($tablet-widths) {
+  .about-us {
+    padding: 55px 50px 75px 50px;
+  }
+
+  .about-us__title {
+    font-size: 43px;
+    line-height: 1.2em;
+    margin-bottom: 35px;
+    @include tablet-container;
+    outline: 1px solid red;
+  }
+
+  .about-us__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    @include tablet-container;
+  }
+
+  .about-us__item {
+    box-sizing: border-box;
+    width: 334px;
+    margin: 0;
+    padding-top: 83px;
+    font-size: 20px;
+    line-height: 1.3em;
+    outline: 1px solid red;
+
+    &--material {
+      order: 1;
+      padding-right: 128px;
+    }
+
+    &--handmade {
+      order: 2;
+      padding-right: 84px;
+    }
+
+    &--style {
+      order: 3;
+      padding-right: 97px;
+    }
+
+    &--russian {
+      order: 4;
+      padding-right: 37px;
+    }
+
+    &--like {
+      order: 5;
+      padding-right: 119px;
+    }
+
+    &--gift {
+      order: 6;
+      padding-right: 100px;
+    }
+  }
+}
+
+@media ($desktop-widths) {
+  .about-us {
+    padding: 67px 50px 75px 50px;
+  }
+
+  .about-us__title {
+    box-sizing: border-box;
+    font-size: 53px;
+    line-height: 1.1em;
+    padding-left: 175px;
+    @include desktop-container;
+    outline: 1px solid red;
+  }
+
+  .about-us__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    @include desktop-container;
+  }
+
+  .about-us__item {
+    box-sizing: border-box;
+    width: 525px;
+    margin: 0;
+    padding-left: 175px;
+    outline: 1px solid red;
+
+    &--material {
+      order: 1;
+      padding-right: 128px;
+    }
+
+    &--handmade {
+      order: 2;
+      padding-right: 276px;
+      padding-left: 0;
+    }
+
+    &--style {
+      order: 3;
+      padding-right: 97px;
+    }
+
+    &--russian {
+      order: 4;
+      padding-right: 229px;
+      padding-left: 0;
+    }
+
+    &--like {
+      order: 5;
+      padding-right: 119px;
+    }
+
+    &--gift {
+      order: 6;
+      padding-right: 289px;
+      padding-left: 0;
+    }
+  }
 }
