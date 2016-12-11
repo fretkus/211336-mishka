@@ -1,19 +1,18 @@
 .page-header {
   position: relative;
-  min-width: 320px;
 }
 
 .page-header__logo {
   box-sizing: border-box;
-  width: 320px;
+  width: 100%;
   min-height: 79px;
-  padding: 22px 115px;
-  margin: 0 auto;
+  padding: 22px 85px;
 }
 
 .page-header__logo a {
   display: block;
   text-align: center;
+  outline: 1px solid red;
 }
 
 @media ($tablet-widths) {
@@ -27,12 +26,13 @@
 
   .page-header__logo a {
     position: absolute;
-    left: 50px;
+    left: 0;
   }
 }
 
 @media ($desktop-widths) {
   .page-header {
+    margin: 0 auto;
     border-bottom: 1px solid #ececec;
   }
 
@@ -42,6 +42,6 @@
 
   .page-header__logo a {
     position: absolute;
-    left: 115px;
+    left: 485px;
   }
 }

@@ -1,1 +1,15 @@
 
+.container {
+  box-sizing: border-box;
+  width: 260px;
+  margin: 0 auto;
+  outline: 1px solid violet;
+
+  @media ($tablet-widths) {
+    width: 668px;
+  }
+
+  @media ($desktop-widths) {
+    width: 1050px;
+  }
+}

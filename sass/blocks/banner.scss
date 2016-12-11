@@ -1,27 +1,27 @@
-.index-top {
+.banner {
   padding: 1px 0;
   background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat 50% -20px;
   margin: 0;
 }
 
-.index-top__title {
+.banner__title {
   font-size: 27px;
   line-height: 1.1em;
   font-weight: 700;
   color: #000000;
   text-align: center;
   min-height: 100px;
-  margin: 70px 30px 110px 30px;
+  margin: 70px 0 110px 0;
 }
 
-.index-top__list {
+.banner__list {
   display: flex;
   flex-direction: column;
   @include ul-reset;
 }
 
-.index-top__item {
-  min-width: 320px;
+.banner__item {
+  width: 100%;
   background: #63d1bb;
 
   &--toy {
@@ -29,10 +29,10 @@
   }
 }
 
-.index-top__item a {
+.banner__item a {
   display: block;
   box-sizing: border-box;
-  width: 130px;
+  width: 50%;
   min-height: 103px;
   padding: 27px 185px 27px 30px;
   font-size: 19px;
@@ -43,37 +43,22 @@
 }
 
 @media ($tablet-widths) {
-  .index-top {
-    padding: 50px 50px 1px 50px;
+  .banner {
+    padding: 50px 0 1px 0;
     background-position: 50% 40px;
-    margin: 0;
   }
 
-  .index-top__title {
+  .banner__title {
     margin: 70px 0 135px 0;
-    min-height: 100px;
   }
 
-  .index-top__list {
-    display: flex;
+  .banner__list {
     flex-direction: row;
     justify-content: center;
     @include ul-reset;
-    @include tablet-container;
   }
 
-  .index-top__item {
-    width: 334px;
-  }
-}
-
-@media ($desktop-widths) {
-  .index-top__list {
-    @include ul-reset;
-    @include desktop-container;
-  }
-
-  .index-top__item {
-    width: 525px;
+  .banner__item {
+    width: 50%;
   }
 }

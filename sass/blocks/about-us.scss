@@ -1,7 +1,5 @@
 .about-us {
-  padding: 32px 30px 35px 30px;
-  padding-bottom: 58px;
-  outline: 1px solid blue;
+  padding: 1px 0 58px 0;
  }
 
 .about-us__title {
@@ -9,7 +7,6 @@
   line-height: 1.2em;
   font-weight: 700;
   color: #000000;
-  @include mobile-container;
   outline: 1px solid red;
 }
 
@@ -17,7 +14,6 @@
   display: flex;
   flex-direction: column;
   @include ul-reset;
-  @include mobile-container;
 }
 
 .about-us__item {
@@ -32,26 +28,24 @@
 
 @media ($tablet-widths) {
   .about-us {
-    padding: 55px 50px 75px 50px;
-  }
+    padding: 58px 0 75px 0;
+   }
 
   .about-us__title {
     font-size: 43px;
     line-height: 1.2em;
     margin-bottom: 35px;
-    @include tablet-container;
     outline: 1px solid red;
   }
 
   .about-us__list {
     flex-direction: row;
     flex-wrap: wrap;
-    @include tablet-container;
   }
 
   .about-us__item {
     box-sizing: border-box;
-    width: 334px;
+    width: 50%;
     margin: 0;
     padding-top: 83px;
     font-size: 20px;
@@ -92,7 +86,7 @@
 
 @media ($desktop-widths) {
   .about-us {
-    padding: 67px 50px 75px 50px;
+    padding: 67px 0 75px 0;
   }
 
   .about-us__title {
@@ -100,20 +94,15 @@
     font-size: 53px;
     line-height: 1.1em;
     padding-left: 175px;
-    @include desktop-container;
     outline: 1px solid red;
   }
 
   .about-us__list {
     flex-direction: row;
     flex-wrap: wrap;
-    @include desktop-container;
   }
 
   .about-us__item {
-    box-sizing: border-box;
-    width: 525px;
-    margin: 0;
     padding-left: 175px;
     outline: 1px solid red;
 

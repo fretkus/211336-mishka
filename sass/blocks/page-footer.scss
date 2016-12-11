@@ -1,38 +1,85 @@
 .page-footer {
+  padding: 1px 0;
   background: #f1f1f1;
-  outline: 1px solid blue;
 }
 
 .page-footer__social {
-  width: 260px;
+  width: 100%;
   height: 55px;
-  margin: 0 30px;
+  margin: 0;
   padding-top: 20px;
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+  outline: 1px solid blue;
 }
 
 .page-footer__copyright {
+  width: 100%;
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+  outline: 1px solid red;
+}
+
+.page-footer__copyright-developed {
   display: inline-block;
   vertical-align: middle;
-  width: 260px;
-  margin: 0 30px;
-  padding: 18px 0;
+  padding: 10px 0;
   font-size: 19px;
   line-height: 0.9em;
   font-weight: 700;
   color: #000000;
-  text-align: center;
   outline: 1px solid red;
 }
 
 .page-footer__copyright-link {
   display: inline-block;
   vertical-align: middle;
-  width: 35px;
+  width: 29px;
   height: 35px;
   font-size: 0;
   margin-left: 30px;
   background: url("../img/logo-htmlacademy.svg") no-repeat center center;
   outline: 1px solid red;
+}
+
+@media ($tablet-widths) {
+  .page-footer {
+    display: flex;
+    flex-direction: row;
+    padding: 48px 0;
+  }
+
+  .page-footer__social {
+    width: 57%;
+    height: 55px;
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 220px;
+    padding-right: 0;
+    border: 0;
+  }
+
+  .page-footer__copyright {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    width: 55%;
+    margin: 0;
+    padding: 18px 0;
+    outline: 1px solid red;
+  }
+
+  .page-footer__copyright-developed {
+    box-sizing: border-box;
+    padding: 10px 0;
+    outline: 1px solid red;
+  }
+}
+
+@media ($desktop-widths) {
+  .page-footer__social {
+    padding-left: 350px;
+  }
 }

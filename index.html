@@ -6,11 +6,11 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header  container">
       <div class="page-header__logo">
         <a><img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка"></a>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav  container">
         <button class="main-nav__toggle  main-nav__toggle--open  main-nav__toggle--close  main-nav__toggle--nojs" type="button">Меню</button>
         <ul class="main-nav__list">
           <li class="main-nav__item  main-nav__item--catalog">
@@ -35,14 +35,14 @@
       </nav>
     </header>
     <main>
-      <section class="index-top">
-        <h1 class="index-top__title">Милые штуки ручной<br> работы для дома</h1>
-        <ul class="index-top__list">
-          <li class="index-top__item  index-top__item--interior"><a href="#">Предметы интерьера</a></li>
-          <li class="index-top__item  index-top__item--toy"><a href="#">Детские игрушки</a></li>
+      <section class="banner  container">
+        <h1 class="banner__title">Милые штуки ручной<br> работы для дома</h1>
+        <ul class="banner__list">
+          <li class="banner__item  banner__item--interior"><a href="#">Предметы интерьера</a></li>
+          <li class="banner__item  banner__item--toy"><a href="#">Детские игрушки</a></li>
         </ul>
       </section>
-      <section class="production">
+      <section class="production  container">
         <div class="production__title-wrapper">
           <h2 class="production__title">Вязаные корзинки</h2>
           <p class="production__caption">Товар недели</p>
@@ -68,7 +68,7 @@
           <a class="btn  production__order" href="#">Заказать</a>
         </div>
       </section>
-      <section class="about-us">
+      <section class="about-us  container">
         <h2 class="about-us__title">Коротко о нас:</h2>
         <ul class="about-us__list">
           <li class="about-us__item  about-us__item--material">Экологически чистые материалы</li>
@@ -79,7 +79,7 @@
           <li class="about-us__item  about-us__item--gift">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
-      <section class="reviews">
+      <section class="reviews  container">
         <div class="reviews-wrapper">
           <h2 class="reviews__title">Отзывы</h2>
           <blockquote class="reviews__item">
@@ -94,19 +94,23 @@
           <a class="btn  reviews__write" href="#">Написать</a>
         </div>
       </section>
-      <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <div class="contacts__items">
-          <p class="contacts__name">e-mail:</p>
-          <p class="contacts__value">info@mimimishkashop.ru</p>
-          <p class="contacts__name">адрес:</p>
-          <p class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+      <section class="contacts  container">
+
+          <h2 class="contacts__title">Контакты</h2>
+          <div class="contacts__items">
+            <p class="contacts__name">e-mail:</p>
+            <p class="contacts__value">info@mimimishkashop.ru</p>
+            <p class="contacts__name">адрес:</p>
+            <p class="contacts__value">г. Санкт-Петербург,<br> ул. Большая Конюшенная, д. 19/8, офис 101</p>
+
         </div>
-        <img class="contacts__map" src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта проезда">
+        <div class="contacts__map">
+          <img src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта проезда">
+        </div>
         <a class="btn  contacts__write" href="#">Напишите нам</a>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer  container">
       <div class="page-footer__social">
         <ul class="social-links">
           <li class="social-link  social-link--inst"><a href="#">Instagram</a></li>
@@ -114,10 +118,10 @@
           <li class="social-link  social-link--tw"><a href="#">Twitter</a></li>
         </ul>
       </div>
-      <p class="page-footer__copyright">
-        Разработано
+      <div class="page-footer__copyright">
+        <span class="page-footer__copyright-developed">Разработано</span>
         <a class="page-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
-      </p>
+      </div>
     </footer>
     <div class="cart-popup">
       <h2 class="cart-popup__title">Добавить в корзину</h2>

@@ -1,5 +1,4 @@
 .main-nav {
-  min-width: 320px;
   min-height: 79px;
   margin: 0 auto;
   border-top: 1px solid #ececec;
@@ -37,7 +36,6 @@
 }
 
 .main-nav__item {
-  padding-left: 50px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -55,7 +53,7 @@
   font-weight: 700;
   color: #000000;
   text-decoration: none;
-  @include mobile-container;
+
 }
 
 @media ($tablet-widths) {
@@ -64,6 +62,7 @@
     top: -1px;
     width: 100%;
     min-height: 89px;
+
     border-bottom: 1px solid #ececec;
   }
 
@@ -111,7 +110,7 @@
       order: 4;
       position: absolute;
       top: 89px;
-      left: 218px;
+      left: 167px;
       width: 167px;
       padding-left: 0;
       margin-left: 0;
@@ -122,7 +121,7 @@
       order: 1;
       position: absolute;
       top: 0;
-      right: 314px;
+      right: 265px;
       width: 84px;
       padding-left: 0;
       border-left: 1px solid #ececec;
@@ -134,7 +133,7 @@
       position: absolute;
       top: 0;
       right: 0;
-      padding: 0 50px 0 83px;
+      padding: 0 0 0 83px;
       border-right: 0;
     }
   }

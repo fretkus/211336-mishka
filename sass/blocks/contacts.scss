@@ -1,10 +1,10 @@
 .contacts {
   padding: 1px 0 39px 0;
-  outline: 1px solid blue;
+  margin: 0;
 }
 
 .contacts__title {
-  margin: 40px 0 40px 30px;
+  margin: 40px 0 40px 0;
   font-size: 18px;
   line-height: 1.7em;
   font-weight: 700;
@@ -13,14 +13,140 @@
 }
 
 .contacts__items {
-  margin: 0 30px 40px 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
   font-size: 15px;
   line-height: 2em;
   outline: 1px solid red;
 }
 
+.contacts__items p {
+  padding-bottom: 40px;
+  margin: 0;
+  outline: 1px solid pink;
+}
+
+.contacts__name {
+  width: 28.9%;
+}
+
+.contacts__value {
+  width: 71.1%;
+}
+
+.contacts__map {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid red;
+}
+
 .contacts__write {
   margin-top: 39px;
-  margin-left: 30px;
   text-decoration: none;
+  @include mobile-container;
+}
+
+@media ($tablet-widths) {
+  .contacts {
+    padding: 60px 0;
+  }
+
+  .contacts__title {
+    margin-top: 0;
+    margin-bottom: 57px;
+    font-size: 43px;
+    line-height: 1.7em;
+    outline: 1px solid red;
+  }
+
+  .contacts__items {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+    outline: 1px solid red;
+  }
+
+  .contacts__items--row {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 50%;
+    outline: 1px solid green;
+  }
+
+  .contacts__items p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .contacts__name {
+    width: 10%;
+  }
+
+  .contacts__value {
+    width: 40%;
+  }
+
+  .contacts__map {
+    display: block;
+    width: 100%;
+
+    outline: 1px solid red;
+  }
+
+  .contacts__write {
+    width: 29.7%;
+    margin: 60px auto 0 auto;
+    text-decoration: none;
+  }
+}
+
+@media ($desktop-widths) {
+  .contacts {
+    padding: 71px 0 105px 0;
+  }
+
+  .contacts__title {
+    margin: 40px 0 60px 175px;
+    font-size: 53px;
+    line-height: 1.1em;
+    width: 33.3%;
+    outline: 1px solid red;
+  }
+
+  .contacts__items {
+    width: 33.3%;
+    font-size: 17px;
+    line-height: 1.8em;
+    margin-left: 175px;
+    margin-bottom: 85px;
+    outline: 1px solid red;
+  }
+
+  .contacts__items p {
+    padding-bottom: 40px;
+    margin: 0;
+    outline: 1px solid pink;
+  }
+
+  .contacts__name {
+    width: 20%;
+  }
+
+  .contacts__value {
+    width: 80%;
+  }
+
+
+
+  .contacts__write {
+    width: 21.9%;
+    margin-top: 39px;
+    margin-left: 225px;
+    text-decoration: none;
+  }
 }

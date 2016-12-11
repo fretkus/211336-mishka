@@ -1,7 +1,6 @@
 .reviews {
-  padding: 1px 30px 45px 30px;
+  padding: 1px 0 45px 0;
   margin: 0;
-  outline: 1px solid blue;
 }
 
 .reviews__title {
@@ -11,7 +10,6 @@
   line-height: 1.2em;
   font-weight: 700;
   color: #000000;
-  @include mobile-container;
   outline: 1px solid red;
 }
 
@@ -20,7 +18,6 @@
   margin: 0;
   font-size: 15px;
   line-height: 2em;
-  @include mobile-container;
   outline: 1px solid red;
 }
 
@@ -43,17 +40,15 @@
 .reviews__buttons {
   display: flex;
   flex-direction: row;
-  @include mobile-container;
 }
 
 .reviews__buttons button {
   margin: 35px 0 38px 0;
   font-size: 0;
-  width: 130px;
+  width: 50%;
   height: 50px;
   border: 1px solid #ececec;
   cursor: pointer;
-  @include mobile-container;
 }
 
 .reviews__prev {
@@ -66,7 +61,6 @@
 
 .reviews__write {
   text-decoration: none;
-  @include mobile-container;
 }
 
 @media ($tablet-widths) {
@@ -80,7 +74,6 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     position: relative;
-    width: 768px;
     padding-top: 70px;
     padding-bottom: 55px;
     margin-left: auto;
@@ -94,13 +87,13 @@
     font-size: 43px;
     line-height: 1.2em;
     margin-left: 50px;
-    height: 52px;
     margin-bottom: 55px;
+    width: 64.5%;
   }
 
   .reviews__item {
     order: 3;
-    width: 668px;
+    margin-left: 50px;
     font-size: 17px;
     line-height: 1.8em;
   }
@@ -118,19 +111,19 @@
 
   .reviews__write {
     order: 2;
-    margin-right: 50px;
-    width: 175px;
+    margin-right: 0;
+    width: 28%;
   }
 
   .reviews__buttons {
     order: 4;
     position: absolute;
     bottom: 70px;
-    right: 50px;
-    margin: 0;
+    right: 0;
     display: flex;
     flex-direction: row;
-    width: 168px;
+    width: 25%;
+    margin: 0;
   }
 
   .reviews__buttons button {
@@ -145,8 +138,7 @@
 @media ($desktop-widths) {
   .reviews-wrapper {
     box-sizing: border-box;
-    width: 1050px;
-    padding: 78px 0 77px 175px;
+    padding: 78px 0 72px 175px;
     margin-left: auto;
     margin-right: auto;
     background: url("../img/review@1x.jpg") no-repeat 0 0;
@@ -156,23 +148,24 @@
   .reviews__title {
     font-size: 53px;
     line-height: 1.1em;
+    width: 80%;
     margin-left: 0;
   }
 
   .reviews__item {
-    width: 875px;
     font-size: 17px;
     line-height: 1.8em;
+    margin-left: 0;
   }
 
   .reviews__write {
     margin-right: 0;
-    width: 175px;
+    width: 20%;
   }
 
   .reviews__buttons {
     bottom: 90px;
     right: 0;
-    width: 175px;
+    width: 16.6%;
   }
 }
