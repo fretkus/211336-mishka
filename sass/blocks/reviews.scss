@@ -76,9 +76,7 @@
     position: relative;
     padding-top: 70px;
     padding-bottom: 55px;
-    margin-left: auto;
-    margin-right: auto;
-    background: url("../img/review@1x.jpg") no-repeat 0 0;
+    background: url("../img/review@1x.jpg") no-repeat 0px 0;
     outline: 1px solid green;
   }
 
@@ -86,14 +84,12 @@
     order: 1;
     font-size: 43px;
     line-height: 1.2em;
-    margin-left: 50px;
     margin-bottom: 55px;
-    width: 64.5%;
+    width: 72%;
   }
 
   .reviews__item {
     order: 3;
-    margin-left: 50px;
     font-size: 17px;
     line-height: 1.8em;
   }

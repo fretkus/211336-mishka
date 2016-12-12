@@ -4,6 +4,7 @@
 }
 
 .contacts__title {
+  width: 100%;
   margin: 40px 0 40px 0;
   font-size: 18px;
   line-height: 1.7em;
@@ -12,7 +13,7 @@
   outline: 1px solid red;
 }
 
-.contacts__items {
+.contacts__item {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -22,7 +23,7 @@
   outline: 1px solid red;
 }
 
-.contacts__items p {
+.contacts__item p {
   padding-bottom: 40px;
   margin: 0;
   outline: 1px solid pink;
@@ -38,8 +39,8 @@
 
 .contacts__map {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: -10px;
+  margin-bottom: 40px;
   outline: 1px solid red;
 }
 
@@ -55,6 +56,7 @@
   }
 
   .contacts__title {
+    padding: 0;
     margin-top: 0;
     margin-bottom: 57px;
     font-size: 43px;
@@ -62,23 +64,15 @@
     outline: 1px solid red;
   }
 
-  .contacts__items {
+  .contacts__item {
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
-    margin-bottom: 60px;
+    width: 100%;
     outline: 1px solid red;
   }
 
-  .contacts__items--row {
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-    width: 50%;
-    outline: 1px solid green;
-  }
-
-  .contacts__items p {
+  .contacts__item p {
     margin: 0;
     padding: 0;
   }
@@ -94,12 +88,11 @@
   .contacts__map {
     display: block;
     width: 100%;
-
     outline: 1px solid red;
   }
 
   .contacts__write {
-    width: 29.7%;
+    width: 228px;
     margin: 60px auto 0 auto;
     text-decoration: none;
   }
@@ -107,27 +100,42 @@
 
 @media ($desktop-widths) {
   .contacts {
-    padding: 71px 0 105px 0;
+    padding: 70px 0 106px 0;
+  }
+
+  .contacts-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid blue;
   }
 
   .contacts__title {
-    margin: 40px 0 60px 175px;
+    order: 1;
+    box-sizing: border-box;
+    width: 50%;
     font-size: 53px;
     line-height: 1.1em;
-    width: 33.3%;
+    padding-left: 175px;
+    margin-bottom: 45px;
     outline: 1px solid red;
   }
 
-  .contacts__items {
-    width: 33.3%;
+  .contacts__item {
+    order: 3;
+    width: 50%;
     font-size: 17px;
     line-height: 1.8em;
-    margin-left: 175px;
+    padding-left: 175px;
     margin-bottom: 85px;
     outline: 1px solid red;
   }
 
-  .contacts__items p {
+  .contacts__item p {
     padding-bottom: 40px;
     margin: 0;
     outline: 1px solid pink;
@@ -141,12 +149,19 @@
     width: 80%;
   }
 
-
+  .contacts__map {
+    order: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+  }
 
   .contacts__write {
-    width: 21.9%;
-    margin-top: 39px;
-    margin-left: 225px;
+    order: 4;
+    width: 231px;
     text-decoration: none;
+    margin-top: -50px;
+    margin-left: 175px;
   }
 }
