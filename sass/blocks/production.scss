@@ -35,7 +35,7 @@
   outline: 1px solid red;
 }
 
-.production__items--row {
+.production__items__row {
   display: table-row;
 }
 
@@ -139,6 +139,7 @@
 @media ($desktop-widths) {
   .production {
     padding: 125px 0 71px 0;
+    background: url("../img/triple-set-mobile@1x.jpg") no-repeat 525px 72px;
   }
 
   .production__title-wrapper {
@@ -179,9 +180,7 @@
   }
 
   .production__img {
-    position: absolute;
-    top: -175px;
-    right: 0;
+    display: none;
   }
 
   .production__price {
