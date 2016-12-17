@@ -8,9 +8,7 @@
   position: relative;
   display: block;
   padding: 0;
-  margin: 0;
   border: none;
-  outline: 1px solid green;
 }
 
 .order-form__group--text {
@@ -72,6 +70,7 @@
 
 .order-form__group--text .order-form__text {
   display: block;
+  width: 100%;
   padding-bottom: 18px;
   margin: 0;
   font-size: 17px;
@@ -80,17 +79,31 @@
   border-bottom: 2px solid #000000;
 }
 
+.order-form__group--number .order-form__text {
+  display: block;
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border: none;
+  border-bottom: 2px solid #000000;
+  outline: 1px solid blue;
+}
+
 .order-form__group--text .order-form__label {
   margin-top: 30px;
   margin-bottom: 16px;
   margin-left: 0;
 }
 
-.order-form__group--text .order-form__text--tel,
-.order-form__group--text .order-form__text--email,
-.order-form__group--text .order-form__textarea {
+.order-form__group--number .order-form__text {
   display: block;
-  margin-top: 20px;
+  font-size: 17px;
+  line-height: 1.1em;
+}
+
+.order-form__group--number,
+.order-form__group--add {
+  padding-top: 30px;
 }
 
 .order-form__textarea {
@@ -99,7 +112,7 @@
   min-height: 141px;
   padding-top: 17px;
   padding-left: 17px;
-  margin: 0;
+  margin-top: 30px;
   font-size: 17px;
   line-height: 1.1em;
   border: 2px solid #444444;
@@ -116,26 +129,33 @@
 
 .order-form__order {
   width: 100%;
-  margin: 0 0 28px 0;
+  margin-bottom: 28px;
   background: #ffffff;
 }
 
 @media ($tablet-widths) {
-  .order-page__title {
-    @include tablet-wrapper;
+  .order-form__wrapper {
+    background: #f1f1f1;
   }
 
-  .order-page__description {
-    margin-left: auto;
-    margin-right: auto;
+  .order-form__group {
+    display: flex;
+  }
+
+  .order-form__legend {
+    width: 25%;
+    padding-top: 60px;
+    outline: 1px solid red;
+  }
+
+  .order-form__items {
+    width: 75%;
+    padding-top: 50px;
+    outline: 1px solid red;
   }
 
   .order-form__line::before {
     display: none;
-  }
-
-  .order-form__legend {
-    padding-top: 10px;
   }
 
   .order-form__label {
@@ -146,47 +166,149 @@
     outline: 1px solid red;
   }
 
-  .order-form__group-colors {
+  .order-form__items--colors {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 304px;
-    background: #f1f1f1;
+    min-height: 304px;
+  }
+
+  .order-form__items--colors .order-form__label {
+    width: 20%;
+  }
+
+  .order-form__group--text .order-form__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 304px;
     box-sizing: border-box;
-    padding: 0 50px;
-    @include tablet-wrapper;
+    padding-top: 30px;
+  }
+
+  .order-form__group--text .order-form__label {
+    width: 20%;
+  }
+
+  .order-form__group--text .order-form__text {
+    width: 75%;
+    height: 30px;
+    padding-left: 18px;
+    margin-top: 30px;
+    outline: 1px solid blue;
+  }
+
+  .order-form__group--text .order-form__label:first-of-type {
+    width: 10%;
+  }
+
+  .order-form__group--text .order-form__text:first-of-type {
+    width: 85%;
+    margin-left: 0;
+  }
+
+  .order-form__group--number {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .order-form__group--number .order-form__text {
+    width: 75%;
+    box-sizing: border-box;
+    padding-left: 18px;
+    padding-top: 60px;
+    background: #f1f1f1;
+    outline: 1px solid blue;
+  }
+
+  .order-form__line--short::after {
+    display: none;
+  }
+
+  .order-form__group--add {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+  }
+
+  .order-form__group--add .order-form__legend {
+    width: 33.5%;
+    padding-top: 18px;
+  }
+
+  .order-form__textarea {
+    margin-top: 0;
+  }
+
+  .order-form__caption-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 50px;
     outline: 1px solid green;
   }
 
-  .order-form__group-colors .order-form__legend {
-    width: 39.5%;
-    height: 304px;
-    outline: 1px solid red;
-
+  .order-form__caption {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    font-size: 17px;
+    line-height: 1.8em;
+    text-align: right;
   }
 
-  .order-form__group-number {
-    background: #f1f1f1;
-    box-sizing: border-box;
-    padding: 0 50px;
-    @include tablet-wrapper;
-    outline: 1px solid green;
+  .order-form__order {
+    width: 34.4%;
   }
 }
 
 @media ($desktop-widths) {
+  .order-form__legend {
+    width: 16.6%;
+    padding-top: 65px;
+    text-align: center;
+  }
+
+  .order-form__items {
+    width: 66.6%;
+  }
+
   .order-form__line::before {
     display: none;
   }
 
-  .order-form__legend {
-    padding: 10px 75px 0 64px;
-    outline: 1px solid red;
+  .order-form__items--colors {
+    min-height: 228px;
+    box-sizing: border-box;
   }
 
-  .order-form__label {
+  .order-form__items--colors .order-form__label {
+    width: 15%;
+  }
+
+  .order-form__group--number {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .order-form__group--number .order-form__text {
+    width: 66.6%;
+    outline: 1px solid blue;
+  }
+
+  .order-form__group--add .order-form__legend {
+    width: 25%;
+    padding-top: 18px;
+  }
+
+  .order-form__textarea {
+    margin-right: 175px;
+  }
+
+  .order-form__caption-wrapper {
     margin-left: 175px;
-    margin-bottom: 49px;
-    outline: 1px solid red;
+    margin-right: 175px;
+    outline: 1px solid green;
   }
 }

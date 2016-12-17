@@ -47,7 +47,8 @@
 .contacts__write {
   margin-top: 39px;
   text-decoration: none;
-  @include mobile-container;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media ($tablet-widths) {
