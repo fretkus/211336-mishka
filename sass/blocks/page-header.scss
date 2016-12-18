@@ -13,7 +13,6 @@
   display: block;
   text-align: center;
   outline: 1px solid green;
-  background: red;
 }
 
 @media ($tablet-widths) {
@@ -33,7 +32,6 @@
     outline: 1px solid pink;
     z-index: 20;
   }
-
 }
 
 @media ($desktop-widths) {
