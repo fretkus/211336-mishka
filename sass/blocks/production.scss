@@ -1,7 +1,6 @@
 .production {
-  padding: 1px 0 35px 30px;
+  padding: 1px 0 35px 0;
   margin: 0;
-  outline: 1px solid blue;
 }
 
 .production__title {
@@ -10,7 +9,7 @@
   font-weight: 700;
   color: #000000;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
   outline: 1px solid red;
 }
 
@@ -19,22 +18,38 @@
   line-height: 0.9em;
   font-weight: 700;
   color: #63d1bb;
+  margin: 0;
+  text-transform: uppercase;
   outline: 1px solid red;
 }
 
 .production__description {
-  margin: 30px 40px 30px 0;
+  margin: 30px 0;
   outline: 1px solid red;
 }
 
 .production__items-for-sale {
+  display: table;
+  width: 100%;
   margin-bottom: 29px;
   outline: 1px solid red;
 }
 
+.production__items__row {
+  display: table-row;
+}
+
+.production__items-for-sale p {
+  display: table-cell;
+  padding: 11px 0;
+  border-bottom: 1px solid #ececec;
+}
+
 .production__img {
+  display: block;
   margin-bottom: 27px;
 }
+
 .production__price {
   font-size: 17px;
   line-height: 1.4em;
@@ -46,5 +61,133 @@
 }
 
 .production__order {
+  display: block;
   text-decoration: none;
+}
+
+@media ($tablet-widths) {
+  .production {
+    padding: 60px 0 52px 0;
+  }
+
+  .production__title-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    outline: 1px solid green;
+  }
+
+  .production__title {
+    width: 75%;
+    font-size: 43px;
+    line-height: 1.2em;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+  }
+
+  .production__caption {
+    box-sizing: border-box;
+    width: 25%;
+    text-align: center;
+    padding: 10px 27px 10px 68px;
+    margin-right: 0;
+  }
+
+  .production__content-wrapper {
+    position: relative;
+    margin-top: 55px;
+    outline: 1px solid green;
+  }
+
+  .production__description {
+    margin: 0;
+    width: 43.4%;
+    font-size: 17px;
+    line-height: 1.8em;
+    outline: 1px solid red;
+  }
+
+  .production__items-for-sale {
+    margin: 45px 0;
+    width: 43.4%;
+    outline: 1px solid red;
+  }
+
+  .production__items-for-sale p {
+    font-size: 15px;
+    line-height: 1.3em;
+  }
+
+  .production__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .production__price {
+    margin-left: 0;
+    width: 43.4%;
+  }
+
+  .production__order {
+    margin-left: 0;
+    width: 43.4%;
+  }
+}
+
+@media ($desktop-widths) {
+  .production {
+    padding: 125px 0 71px 0;
+    background: url("../img/triple-set-mobile@1x.jpg") no-repeat 525px 72px;
+  }
+
+  .production__title-wrapper {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    outline: 1px solid green;
+  }
+
+  .production__title {
+    width: 83.3%;
+    font-size: 53px;
+    line-height: 1.1em;
+  }
+
+  .production__caption {
+    box-sizing: border-box;
+    width: 16.7%;
+    text-align: center;
+    padding: 12px 50px;
+  }
+
+  .production__content-wrapper {
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 55px;
+    padding-left: 175px;
+    outline: 1px solid green;
+  }
+
+  .production__description {
+    margin: 60px 0;
+    width: 33%;
+  }
+
+  .production__items-for-sale {
+    margin-bottom: 110px;
+    width: 33%;
+  }
+
+  .production__img {
+    display: none;
+  }
+
+  .production__price {
+    width: 33%;
+  }
+
+  .production__order {
+    width: 33%;
+  }
 }

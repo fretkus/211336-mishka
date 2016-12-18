@@ -1,5 +1,5 @@
 .cart-popup {
-  display: block;
+  display: none;
   width: 320px;
   position: absolute;
   top: 60%;
@@ -124,4 +124,64 @@
   background: #63d1bb;
   border: none;
   outline: none;
+}
+
+@media ($tablet-widths) {
+  .cart-popup {
+    width: 568px;
+  }
+
+  .cart-popup__title {
+    font-size: 30px;
+    line-height: 1.9em;
+  }
+
+  .cart-popup__input + .cart-popup__label {
+    width: 112px;
+    height: 52px;
+
+    &:first-of-type {
+      margin-left: 109px;
+    }
+
+    &::before {
+      width: 112px;
+      height: 52px;
+    }
+  }
+
+  .cart-popup__input--size-s +.cart-popup__label::after {
+    left: 109px;
+  }
+
+  .cart-popup__input--size-s +.cart-popup__label::before {
+    left: 109px;
+  }
+
+  .cart-popup__input--size-m +.cart-popup__label::after {
+    left: 228px;
+  }
+
+  .cart-popup__input--size-m +.cart-popup__label::before {
+    left: 228px;
+  }
+
+  .cart-popup__input--size-l +.cart-popup__label::after {
+    left: 347px;
+  }
+
+  .cart-popup__input--size-l +.cart-popup__label::before {
+    left: 347px;
+  }
+
+  .cart-popup__input:checked + .cart-popup__label::after {
+    width: 112px;
+    height: 52px;
+  }
+
+  .cart-popup__btn {
+    width: 350px;
+    height: 52px;
+    margin: 30px auto 46px auto;
+  }
 }

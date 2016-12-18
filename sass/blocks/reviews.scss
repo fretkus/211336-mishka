@@ -1,6 +1,6 @@
 .reviews {
-  padding: 1px 0 45px 30px;
-  outline: 1px solid blue;
+  padding: 1px 0 45px 0;
+  margin: 0;
 }
 
 .reviews__title {
@@ -15,7 +15,6 @@
 
 .reviews__item {
   display: block;
-  padding-right: 30px;
   margin: 0;
   font-size: 15px;
   line-height: 2em;
@@ -38,12 +37,15 @@
   color: #444444;
 }
 
+.reviews__buttons {
+  display: flex;
+  flex-direction: row;
+}
+
 .reviews__buttons button {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 35px -4px 38px 0;
+  margin: 35px 0 38px 0;
   font-size: 0;
-  width: 130px;
+  width: 50%;
   height: 50px;
   border: 1px solid #ececec;
   cursor: pointer;
@@ -59,4 +61,117 @@
 
 .reviews__write {
   text-decoration: none;
+}
+
+@media ($tablet-widths) {
+  .reviews {
+    width: 768px;
+    padding: 1px 0 72px 0;
+    margin-left: auto;
+    margin-right: auto;
+    background: url("../img/review@1x.jpg") no-repeat 0px 0;
+    outline: 1px solid blue;
+  }
+
+  .reviews-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 55px;
+    outline: 1px solid green;
+  }
+
+  .reviews__title {
+    order: 1;
+    font-size: 43px;
+    line-height: 1.2em;
+    margin-bottom: 55px;
+    width: 72%;
+  }
+
+  .reviews__item {
+    order: 3;
+    font-size: 17px;
+    line-height: 1.8em;
+  }
+
+  .reviews__auhor-name {
+    margin-top: 35px;
+    font-size: 17px;
+    line-height: 1.4em;
+  }
+
+  .reviews__inst {
+    font-size: 17px;
+    line-height: 1.8em;
+  }
+
+  .reviews__write {
+    order: 2;
+    margin-right: 0;
+    width: 28%;
+  }
+
+  .reviews__buttons {
+    order: 4;
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    margin: 0;
+  }
+
+  .reviews__buttons button {
+    margin: 0;
+    width: 84px;
+    height: 30px;
+    border: 0;
+    cursor: pointer;
+  }
+}
+
+@media ($desktop-widths) {
+  .reviews {
+    width: 100%;
+    padding: 1px 0 72px 0;
+    background-image: none;
+    outline: 1px solid blue;
+  }
+  .reviews-wrapper {
+    box-sizing: border-box;
+    padding: 78px 0 72px 175px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url("../img/review@1x.jpg") no-repeat 0 0;
+    outline: 1px solid green;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 1.1em;
+    width: 80%;
+    margin-left: 0;
+  }
+
+  .reviews__item {
+    font-size: 17px;
+    line-height: 1.8em;
+    margin-left: 0;
+  }
+
+  .reviews__write {
+    margin-right: 0;
+    width: 20%;
+  }
+
+  .reviews__buttons {
+    bottom: 90px;
+    right: 0;
+    width: 16.6%;
+  }
 }
