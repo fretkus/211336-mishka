@@ -1,6 +1,18 @@
 .production {
+  position: relative;
   padding: 1px 0 35px 0;
   margin: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    background: url("../img/bg-zigzag-line.svg") repeat -7px;
+    background-size: cover;
+  }
 }
 
 .production__title {
@@ -68,6 +80,13 @@
 @media ($tablet-widths) {
   .production {
     padding: 60px 0 52px 0;
+
+    &::after {
+      bottom: -52px;
+      height: 15px;
+      background: url("../img/bg-zigzag-line.svg") repeat -6px;
+      background-size: 101.5%;
+    }
   }
 
   .production__title-wrapper {
@@ -139,7 +158,21 @@
 @media ($desktop-widths) {
   .production {
     padding: 125px 0 71px 0;
-    background: url("../img/triple-set-mobile@1x.jpg") no-repeat 525px 72px;
+    background: url("../img/triple-set-desktop@1x.jpg") no-repeat 525px 72px;
+
+    @media (min-width: 1150px) and (min-resolution: 144dpi),
+            (min-width: 1150px) and (min-resolution: 1.5dppx) {
+              background-image: url("../img/triple-set-desktop@2x.jpg");
+              background-size: 575px auto;
+    }
+
+
+    &::after {
+      bottom: -73px;
+      height: 23px;
+      background: url("../img/bg-zigzag-line.svg") repeat -25px;
+      background-size: 104.5%;
+    }
   }
 
   .production__title-wrapper {
@@ -179,7 +212,7 @@
     width: 33%;
   }
 
-  .production__img {
+  .production picture {
     display: none;
   }
 
