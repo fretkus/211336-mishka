@@ -1,6 +1,6 @@
 .production {
   position: relative;
-  padding: 1px 0 35px 0;
+  padding: 1px 0 40px 0;
   margin: 0;
 
   &::after {
@@ -9,7 +9,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 7px;
+    min-height: 7px;
     background: url("../img/bg-zigzag-line.svg") repeat -7px;
     background-size: cover;
   }
@@ -20,8 +20,8 @@
   line-height: 1.2em;
   font-weight: 700;
   color: #000000;
-  margin-top: 20px;
-  margin-bottom: 13px;
+  margin-top: 25px;
+  margin-bottom: 7px;
   outline: 1px solid red;
 }
 
@@ -36,14 +36,15 @@
 }
 
 .production__description {
-  margin: 30px 0;
+  margin-top: 25px;
+  margin-bottom: 18px;
   outline: 1px solid red;
 }
 
 .production__items-for-sale {
   display: table;
   width: 100%;
-  margin-bottom: 29px;
+  margin-bottom: 32px;
   outline: 1px solid red;
 }
 
@@ -53,13 +54,13 @@
 
 .production__items-for-sale p {
   display: table-cell;
-  padding: 11px 0;
+  padding: 7px 0;
   border-bottom: 1px solid #ececec;
 }
 
 .production__img {
   display: block;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 }
 
 .production__price {
@@ -79,10 +80,10 @@
 
 @media ($tablet-widths) {
   .production {
-    padding: 60px 0 52px 0;
+    padding: 45px 0 52px 0;
 
     &::after {
-      bottom: -52px;
+      bottom: -15px;
       height: 15px;
       background: url("../img/bg-zigzag-line.svg") repeat -6px;
       background-size: 101.5%;
@@ -101,7 +102,6 @@
     font-size: 43px;
     line-height: 1.2em;
     font-weight: 700;
-    padding: 0;
     margin: 0;
   }
 
@@ -109,13 +109,13 @@
     box-sizing: border-box;
     width: 25%;
     text-align: center;
-    padding: 10px 27px 10px 68px;
+    padding: 12px 27px 8px 68px;
     margin-right: 0;
   }
 
   .production__content-wrapper {
     position: relative;
-    margin-top: 55px;
+    margin-top: 50px;
     outline: 1px solid green;
   }
 
@@ -128,50 +128,63 @@
   }
 
   .production__items-for-sale {
-    margin: 45px 0;
+    margin: 40px 0;
     width: 43.4%;
     outline: 1px solid red;
   }
 
   .production__items-for-sale p {
+    padding: 8px 0;
     font-size: 15px;
     line-height: 1.3em;
   }
 
   .production__img {
     position: absolute;
-    top: 0;
+    top: 7px;
     right: 0;
   }
 
   .production__price {
-    margin-left: 0;
     width: 43.4%;
+    margin-top: 63px;
+    margin-left: 0;
+    font-size: 20px;
+    line-height: 1.2em;
   }
 
   .production__order {
-    margin-left: 0;
     width: 43.4%;
+    margin-top: 35px;
+    margin-left: 0;
   }
 }
 
 @media ($desktop-widths) {
   .production {
     padding: 125px 0 71px 0;
+
+    &::after {
+      display: none;
+      /*bottom: -23px;
+      width: 100%;
+      height: 23px;
+      background: url("../img/bg-zigzag-line.svg") repeat -25px;
+      background-size: 104.5%;*/
+    }
+  }
+
+  .production--background {
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid blue;
     background: url("../img/triple-set-desktop@1x.jpg") no-repeat 525px 72px;
 
     @media (min-width: 1150px) and (min-resolution: 144dpi),
-            (min-width: 1150px) and (min-resolution: 1.5dppx) {
-              background-image: url("../img/triple-set-desktop@2x.jpg");
-              background-size: 575px auto;
-    }
-
-
-    &::after {
-      bottom: -73px;
-      height: 23px;
-      background: url("../img/bg-zigzag-line.svg") repeat -25px;
-      background-size: 104.5%;
+           (min-width: 1150px) and (min-resolution: 1.5dppx) {
+             background-image: url("../img/triple-set-desktop@2x.jpg");
+             background-size: 575px auto;
     }
   }
 
@@ -179,6 +192,7 @@
     flex-direction: row-reverse;
     justify-content: flex-end;
     outline: 1px solid green;
+    position: relative;
   }
 
   .production__title {
@@ -191,24 +205,24 @@
     box-sizing: border-box;
     width: 16.7%;
     text-align: center;
-    padding: 12px 50px;
+    padding-top: 16px;
+    padding-left: 16px;
   }
 
   .production__content-wrapper {
     position: relative;
     box-sizing: border-box;
-    margin-top: 55px;
     padding-left: 175px;
     outline: 1px solid green;
   }
 
   .production__description {
-    margin: 60px 0;
+    margin: 50px 0;
     width: 33%;
   }
 
   .production__items-for-sale {
-    margin-bottom: 110px;
+    margin-bottom: 118px;
     width: 33%;
   }
 

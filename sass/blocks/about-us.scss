@@ -1,5 +1,5 @@
 .about-us {
-  padding: 1px 0 58px 0;
+  padding: 7px 0 58px 0;
  }
 
 .about-us__title {
@@ -17,18 +17,53 @@
 }
 
 .about-us__item {
-  margin: 0;
-  padding-top: 83px;
+  position: relative;
+  min-height: 35px;
+  margin-bottom: 15px;
+  padding-top: 65px;
   font-size: 17px;
   line-height: 1.3em;
   font-weight: 700;
   color: #000000;
   outline: 1px solid red;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -5px;
+    width: 55px;
+    height: 40px;
+  }
+}
+
+.about-us__item--material::before {
+  background: url("../img/icon-feature-1.svg") no-repeat 50%;
+}
+
+.about-us__item--style::before {
+  background: url("../img/icon-feature-3.svg") no-repeat 50%;
+}
+
+.about-us__item--like::before {
+  background: url("../img/icon-feature-5.svg") no-repeat 50%;
+}
+
+.about-us__item--handmade::before {
+  background: url("../img/icon-feature-2.svg") no-repeat 50%;
+}
+
+.about-us__item--russian::before {
+  background: url("../img/icon-feature-4.svg") no-repeat 50%;
+}
+
+.about-us__item--gift::before {
+  background: url("../img/icon-feature-6.svg") no-repeat 50%;
 }
 
 @media ($tablet-widths) {
   .about-us {
-    padding: 58px 0 75px 0;
+    padding: 28px 0 75px 0;
    }
 
   .about-us__title {
@@ -46,8 +81,7 @@
   .about-us__item {
     box-sizing: border-box;
     width: 50%;
-    margin: 0;
-    padding-top: 83px;
+    margin-bottom: 40px;
     font-size: 20px;
     line-height: 1.3em;
     outline: 1px solid red;
@@ -80,52 +114,39 @@
 
 @media ($desktop-widths) {
   .about-us {
-    padding: 67px 0 75px 0;
+    position: relative;
+    padding: 39px 0 75px 0;
+    outline: 1px solid blue;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-height: 27px;
+      background: url("../img/bg-zigzag-line.svg") repeat -25px;
+      background-size: 104.5%;
+    }
   }
 
   .about-us__title {
     box-sizing: border-box;
     font-size: 53px;
     line-height: 1.1em;
-    padding-left: 175px;
+    padding-left: 170px;
     outline: 1px solid red;
   }
 
   .about-us__list {
     flex-direction: row;
     flex-wrap: wrap;
+    margin-left: 175px;
   }
 
   .about-us__item {
-    padding-left: 175px;
-    outline: 1px solid red;
-
-    &--material {
-      order: 1;
-
-    }
-
-    &--handmade {
-      order: 2;
-      padding-left: 0;
-    }
-
-    &--style {
-      order: 3;
-    }
-
-    &--russian {
-      order: 4;
-      padding-left: 0;
-    }
-
-    &--like {
-      order: 5;
-    }
-
-    &--gift {
-      order: 6;
-      padding-left: 0;
-    }
+    width: 350px;
+    padding-top: 60px;
+    margin-bottom: 45px;
   }
 }
