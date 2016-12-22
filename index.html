@@ -87,18 +87,16 @@
       </section>
       <section class="about-us">
         <div class="container">
-
-
-        <h2 class="about-us__title">Коротко о нас:</h2>
-        <ul class="about-us__list">
-          <li class="about-us__item  about-us__item--material">Экологически<br> чистые материалы</li>
-          <li class="about-us__item  about-us__item--style">Скандинавский стиль<br> по российской цене</li>
-          <li class="about-us__item  about-us__item--like">Увеличивает лайки<br> на фотографиях</li>
-          <li class="about-us__item  about-us__item--handmade">Связано вручную с<br> любовью и умилением</li>
-          <li class="about-us__item  about-us__item--russian">Поддержка отчественного<br> производителя</li>
-          <li class="about-us__item  about-us__item--gift">Поставляется в<br> подарочной упаковке</li>
-        </ul>
-          </div>
+          <h2 class="about-us__title">Коротко о нас:</h2>
+          <ul class="about-us__list">
+            <li class="about-us__item  about-us__item--material">Экологически<br> чистые материалы</li>
+            <li class="about-us__item  about-us__item--style">Скандинавский стиль<br> по российской цене</li>
+            <li class="about-us__item  about-us__item--like">Увеличивает лайки<br> на фотографиях</li>
+            <li class="about-us__item  about-us__item--handmade">Связано вручную с<br> любовью и умилением</li>
+            <li class="about-us__item  about-us__item--russian">Поддержка отчественного<br> производителя</li>
+            <li class="about-us__item  about-us__item--gift">Поставляется в<br> подарочной упаковке</li>
+          </ul>
+        </div>
       </section>
       <section class="reviews">
         <div class="reviews-wrapper  container">
@@ -120,12 +118,18 @@
           <h2 class="contacts__title">Контакты</h2>
             <div class="contacts__item">
               <p class="contacts__name">e-mail:</p>
-              <p class="contacts__value">info@mimimishkashop.ru</p>
+              <a class="contacts__value  contacts__value--mishka" href="#">info@mimimishkashop.ru</a>
               <p class="contacts__name">адрес:</p>
               <p class="contacts__value">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</p>
             </div>
         </div>
-        <img class="contacts__map  container--map" src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта проезда">
+        <div class="contacts__map  contacts__map--wrapper">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
+            <img src="img/map-mobile@1x.jpg" alt="Карта">
+          </picture>
+        </div>
         <div class="contacts__write-wrapper">
           <a class="btn  contacts__write" href="#">Напишите нам</a>
         </div>
