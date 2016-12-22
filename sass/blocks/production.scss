@@ -2,8 +2,12 @@
   position: relative;
   padding: 1px 0 40px 0;
   margin: 0;
+  background: url("../img/bg-zigzag-line.svg") repeat-X 0 700px;
+background-size: 320px 15px;
 
-  &::after {
+
+
+/*&::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -12,7 +16,7 @@
     min-height: 7px;
     background: url("../img/bg-zigzag-line.svg") repeat -7px;
     background-size: cover;
-  }
+  }*/
 }
 
 .production__title {
@@ -82,12 +86,15 @@
   .production {
     padding: 45px 0 52px 0;
 
-    &::after {
+    background: url("../img/bg-zigzag-line.svg") repeat-X 0 580px;
+    background-size: 768px 25px;
+
+    /*&::after {
       bottom: -15px;
       height: 15px;
       background: url("../img/bg-zigzag-line.svg") repeat -6px;
       background-size: 101.5%;
-    }
+    }*/
   }
 
   .production__title-wrapper {
