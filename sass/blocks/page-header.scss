@@ -12,7 +12,6 @@
 .page-header__logo a {
   display: block;
   text-align: center;
-  outline: 1px solid green;
 }
 
 @media ($tablet-widths) {
@@ -22,14 +21,12 @@
 
   .page-header__logo {
     min-height: 89px;
-    outline: 1px solid blue;
   }
 
   .page-header__logo a {
     display: block;
     position: absolute;
     left: 0;
-    outline: 1px solid pink;
     z-index: 20;
   }
 }

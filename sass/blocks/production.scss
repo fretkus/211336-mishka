@@ -1,22 +1,9 @@
 .production {
   position: relative;
-  padding: 1px 0 40px 0;
+  padding: 1px 0 50px 0;
   margin: 0;
-  background: url("../img/bg-zigzag-line.svg") repeat-X 0 700px;
-background-size: 320px 15px;
-
-
-
-/*&::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    min-height: 7px;
-    background: url("../img/bg-zigzag-line.svg") repeat -7px;
-    background-size: cover;
-  }*/
+  background: url("../img/bg-zigzag-line.svg") repeat-X 0 815px;
+  background-size: 320px 15px;
 }
 
 .production__title {
@@ -26,7 +13,6 @@ background-size: 320px 15px;
   color: #000000;
   margin-top: 25px;
   margin-bottom: 7px;
-  outline: 1px solid red;
 }
 
 .production__caption {
@@ -36,20 +22,17 @@ background-size: 320px 15px;
   color: #63d1bb;
   margin: 0;
   text-transform: uppercase;
-  outline: 1px solid red;
 }
 
 .production__description {
   margin-top: 25px;
   margin-bottom: 18px;
-  outline: 1px solid red;
 }
 
 .production__items-for-sale {
   display: table;
   width: 100%;
   margin-bottom: 32px;
-  outline: 1px solid red;
 }
 
 .production__items__row {
@@ -74,7 +57,6 @@ background-size: 320px 15px;
   color: #444444;
   text-align: center;
   margin-bottom: 27px;
-  outline: 1px solid red;
 }
 
 .production__order {
@@ -84,24 +66,15 @@ background-size: 320px 15px;
 
 @media ($tablet-widths) {
   .production {
-    padding: 45px 0 52px 0;
-
-    background: url("../img/bg-zigzag-line.svg") repeat-X 0 580px;
+    padding: 45px 0 65px 0;
+    background: url("../img/bg-zigzag-line.svg") repeat-X 0 603px;
     background-size: 768px 25px;
-
-    /*&::after {
-      bottom: -15px;
-      height: 15px;
-      background: url("../img/bg-zigzag-line.svg") repeat -6px;
-      background-size: 101.5%;
-    }*/
   }
 
   .production__title-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    outline: 1px solid green;
   }
 
   .production__title {
@@ -123,7 +96,6 @@ background-size: 320px 15px;
   .production__content-wrapper {
     position: relative;
     margin-top: 50px;
-    outline: 1px solid green;
   }
 
   .production__description {
@@ -131,13 +103,11 @@ background-size: 320px 15px;
     width: 43.4%;
     font-size: 17px;
     line-height: 1.8em;
-    outline: 1px solid red;
   }
 
   .production__items-for-sale {
     margin: 40px 0;
     width: 43.4%;
-    outline: 1px solid red;
   }
 
   .production__items-for-sale p {
@@ -169,24 +139,15 @@ background-size: 320px 15px;
 
 @media ($desktop-widths) {
   .production {
-    padding: 125px 0 71px 0;
-
-    &::after {
-      display: none;
-      /*bottom: -23px;
-      width: 100%;
-      height: 23px;
-      background: url("../img/bg-zigzag-line.svg") repeat -25px;
-      background-size: 104.5%;*/
-    }
+    padding: 115px 0 71px 0;
   }
 
   .production--background {
+    max-width: 100%;
     width: 1050px;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px solid blue;
-    background: url("../img/triple-set-desktop@1x.jpg") no-repeat 525px 72px;
+    background: url("../img/triple-set-desktop@1x.jpg") no-repeat 525px 62px;
 
     @media (min-width: 1150px) and (min-resolution: 144dpi),
            (min-width: 1150px) and (min-resolution: 1.5dppx) {
@@ -198,19 +159,18 @@ background-size: 320px 15px;
   .production__title-wrapper {
     flex-direction: row-reverse;
     justify-content: flex-end;
-    outline: 1px solid green;
     position: relative;
   }
 
   .production__title {
-    width: 83.3%;
+    width: 83.5%;
     font-size: 53px;
     line-height: 1.1em;
   }
 
   .production__caption {
     box-sizing: border-box;
-    width: 16.7%;
+    width: 16.5%;
     text-align: center;
     padding-top: 16px;
     padding-left: 16px;
@@ -220,7 +180,6 @@ background-size: 320px 15px;
     position: relative;
     box-sizing: border-box;
     padding-left: 175px;
-    outline: 1px solid green;
   }
 
   .production__description {

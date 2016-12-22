@@ -1,16 +1,17 @@
 .reviews {
   padding: 1px 0 45px 0;
   margin: 0;
+  background: url("../img/bg-zigzag-line.svg") repeat-X 0 610px;
+  background-size: 320px 15px;
 }
 
 .reviews__title {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-size: 25px;
   line-height: 1.2em;
   font-weight: 700;
   color: #000000;
-  outline: 1px solid red;
 }
 
 .reviews__item {
@@ -18,7 +19,6 @@
   margin: 0;
   font-size: 15px;
   line-height: 2em;
-  outline: 1px solid red;
 }
 
 .reviews__auhor-name {
@@ -74,31 +74,20 @@
 
 @media ($tablet-widths) {
   .reviews {
-    position: relative;
+    max-width: 100%;
     width: 768px;
     padding: 1px 0 62px 0;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px solid blue;
     background: url("../img/review@1x.jpg") no-repeat 0 0;
+
 
      @media (min-width: 768px) and (min-resolution: 144dpi),
             (min-width: 768px) and (min-resolution: 1.5dppx) {
               background-image: url("../img/review@2x.jpg");
               background-size: 350px auto;
     }
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -23px;
-      width: 100%;
-      height: 23px;
-      background: url("../img/bg-zigzag-line.svg") repeat -25px;
-      background-size: 104.5%;
-    }
   }
-
 
   .reviews-wrapper {
     display: flex;
@@ -108,7 +97,6 @@
     position: relative;
     padding-top: 75px;
     padding-bottom: 55px;
-    outline: 1px solid green;
   }
 
   .reviews__title {
@@ -165,17 +153,18 @@
 @media ($desktop-widths) {
   .reviews {
     width: 100%;
-    padding: 1px 0 70px 0;
+    padding: 1px 0 90px 0;
     background-image: none;
-    outline: 1px solid blue;
+    background: url("../img/bg-zigzag-line.svg") repeat-X 0 520px;
+    background-size: 1150px 25px;
   }
+
   .reviews-wrapper {
     box-sizing: border-box;
     padding: 68px 0 95px 175px;
     margin-left: auto;
     margin-right: auto;
     background: url("../img/review@1x.jpg") no-repeat 0 0;
-    outline: 1px solid green;
   }
 
   .reviews__title {
