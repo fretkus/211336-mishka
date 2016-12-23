@@ -15,9 +15,29 @@
   outline: 1px solid green;
 }
 
-.page-footer__logo img {
-  display: none;
+
+.footer__logo {
+
+  filter: grayscale(1);
+  filter: brightness(0);
+
+  &[href]:hover {
+    filter: grayscale(0);
+  }
+
+  &[href]:active {
+    filter: grayscale(0);
+    opacity: 0.3;
+  }
+
+  &--hidden {
+    display: none;
+  }
 }
+
+/*.page-footer__logo img {
+  display: none;
+}*/
 
 .page-footer__social {
   width: 100%;
@@ -64,6 +84,11 @@
     padding: 55px 0;
     outline: 1px solid green;
   }
+
+  .footer__logo {
+     display: block;
+     width: 185px;
+   }
 
   .page-footer__logo img {
     display: block;

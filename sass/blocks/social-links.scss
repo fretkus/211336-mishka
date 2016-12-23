@@ -1,6 +1,5 @@
 .social-links {
-  @include ul-reset;
-  outline: 1px solid pink;
+  font-size: 0;
 }
 
 .social-link {
@@ -8,20 +7,29 @@
   vertical-align: top;
   width: 30px;
   height: 30px;
-  font-size: 0;
   margin-right: 35px;
-  outline: 1px solid red;
+  filter: grayscale(1);
+  filter: brightness(0);
+
+  &:hover {
+    filter: grayscale(0);
+  }
+
+  &:active {
+    filter: grayscale(0);
+    opacity: 0.3;
+  }
 }
 
 .social-link--inst {
-  background: url("../img/icon-insta.svg") no-repeat center center;
+  background: url("../img/icon-insta.svg") no-repeat 50% 100%;
 }
 
 .social-link--fb {
-  background: url("../img/icon-fb.svg") no-repeat center center;
+  background: url("../img/icon-fb.svg") no-repeat 50% 100%;
 }
 
 .social-link--tw {
   margin-right: 0;
-  background: url("../img/icon-twitter.svg") no-repeat center center;
+  background: url("../img/icon-twitter.svg") no-repeat 50% 100%;
 }
