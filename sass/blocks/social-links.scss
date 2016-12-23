@@ -2,12 +2,12 @@
   font-size: 0;
 }
 
-.social-link {
-  display: inline-block;
-  vertical-align: top;
+.social__link {
+  display: block;
+
   width: 30px;
   height: 30px;
-  margin-right: 35px;
+
   filter: grayscale(1);
   filter: brightness(0);
 
@@ -19,17 +19,16 @@
     filter: grayscale(0);
     opacity: 0.3;
   }
-}
 
-.social-link--inst {
-  background: url("../img/icon-insta.svg") no-repeat 50% 100%;
-}
+  &--inst {
+    background: url("../img/icon-insta.svg") no-repeat 50% 100%;
+  }
 
-.social-link--fb {
-  background: url("../img/icon-fb.svg") no-repeat 50% 100%;
-}
+  &--fb {
+    background: url("../img/icon-fb.svg") no-repeat 50% 100%;
+  }
 
-.social-link--tw {
-  margin-right: 0;
-  background: url("../img/icon-twitter.svg") no-repeat 50% 100%;
+  &--tw {
+    background: url("../img/icon-twitter.svg") no-repeat 50% 100%;
+  }
 }

@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка-Форма</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -105,23 +106,15 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper  container">
-        <section class="page-footer__logo">
-          <a href="index.html">
-            <img src="img/logo-mobile.svg" width="86" height="36" alt="Мишка">
-          </a>
-        </section>
-        <section class="page-footer__social">
-          <ul class="social-links">
-            <li class="social-link  social-link--inst"><a href="#">Instagram</a></li>
-            <li class="social-link  social-link--fb"><a href="#">Facebook</a></li>
-            <li class="social-link  social-link--tw"><a href="#">Twitter</a></li>
-          </ul>
-        </section>
-        <section class="page-footer__copyright">
-          <span class="page-footer__copyright-developed">Разработано</span>
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
-        </section>
+        <a href="index.html" class="page-footer__logo  page-footer__logo--hidden  logo-main"><img src="img/logo-footer.svg" width="102" height="35" alt="Логотип Мишка"></a>
+        <div class="page-footer__social  social-links">
+          <a href="#" class="social__link  social__link--inst">Instagram</a>
+          <a href="#" class="social__link  social__link--fb">Facebook</a>
+          <a href="#" class="social__link  social__link--tw">Twitter</a>
+        </div>
+        <a href="https://htmlacademy.ru/" class="page-footer__copyright">Разработано <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Лого HTML Academy"></a>
       </div>
     </footer>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>
