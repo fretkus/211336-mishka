@@ -108,6 +108,10 @@
   }
 }
 
+.main-nav__text {
+  display: none;
+}
+
 @media ($tablet-widths) {
   .main-nav {
     position: absolute;
@@ -200,6 +204,17 @@
       padding: 2px 0 0 83px;
       border-right: 0;
     }
+  }
+
+  .main-nav__text {
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    text-align: right;
+    font-size: 15px;
+    line-height: 1.6em;
+    z-index: 20;
   }
 }
 
