@@ -195,6 +195,38 @@
   background: #ffffff;
 }
 
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+.order-form__text--tel::-webkit-input-placeholder {
+  font-weight: 400;
+  opacity: 0.3;
+}
+
+input[type="text"]::-moz-placeholder,
+input[type="email"]::-moz-placeholder,
+textarea::-moz-placeholder,
+.order-form__text--tel::-moz-placeholder {
+  font-weight: 400;
+  opacity: 0.3;
+}
+
+input[type="text"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder,
+textarea:-ms-input-placeholder,
+.order-form__text--tel:-ms-input-placeholder {
+  font-weight: 400;
+  opacity: 0.3;
+}
+
+input[type="text"]:-moz-placeholder,
+input[type="email"]:-moz-placeholder,
+textarea:-moz-placeholder,
+.order-form__text--tel:-moz-placeholder {
+  font-weight: 400;
+  opacity: 0.3;
+}
+
 .order-form__label--name {
   display: flex;
   flex-direction: column;
@@ -295,8 +327,7 @@
   }
 
   .order-form__checkbox + .order-form__label {
-    width: 90px;
-    margin-right: 60px;
+    width: 135px;
     padding-bottom: 25px;
     font-size: 19px;
     line-height: 1.1em;
@@ -330,6 +361,7 @@
   }
 
   .order-form__checkbox + label:nth-of-type(2n) {
+    width: 105px;
     margin-right: 0;
   }
 
@@ -349,6 +381,7 @@
   }
 
   .order-form__label--name:first-of-type {
+    padding-top: 11px;
     margin-left: 0px;
   }
 
@@ -386,6 +419,7 @@
     }
 
     .order-form__text {
+      margin-left: 0;
       background: #f1f1f1;
     }
   }
@@ -399,11 +433,14 @@
     }
 
     .order-form__text {
+      margin-left: 0;
       background: #f1f1f1;
     }
   }
 
   .order-form__group--textarea {
+    padding-top: 58px;
+
     .order-form__legend {
       padding-top: 15px;
       margin: 0;
@@ -435,6 +472,7 @@
   .order-form__signature {
     order: 2;
     width: 438px;
+    padding-top: 12px;
     margin: 0;
     font-size: 17px;
     line-height: 1.8em;
@@ -463,17 +501,24 @@
     margin-left: 175px;
   }
 
+  .order-form__group--color {
+    padding-top: 44px;
+  }
+
   .order-form__group--color .order-form__legend {
     padding-top: 20px;
   }
 
   .order-form__group--color .order-form__label {
+    width: 130px;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-bottom: 16px;
   }
 
   .order-form__checkbox + .order-form__label:nth-of-type(2n) {
-    margin-right: 60px;
+    width: 130px;
+    margin-right: 0;
   }
 
   .order-form__checkbox + .order-form__label:nth-of-type(3n) {
@@ -498,7 +543,7 @@
   }
 
   .order-form__text {
-    margin-left: 0;
+    margin-left: 20px;
     margin-right: 175px;
 
     &--tel-icon {
@@ -528,9 +573,11 @@
 
   .order-form__signature {
     width: 470px;
+    padding-top: 15px;
   }
 
   .order-form__order {
     margin-left: 175px;
+    margin-bottom: 48px;
   }
 }
