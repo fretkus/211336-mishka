@@ -2,30 +2,72 @@
   margin: 0;
   margin-bottom: 58px;
   border: 1px solid #ececec;
+
+  &:hover {
+    box-shadow: 0 10px 10px 0px rgba(#000000, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 6px 6px 0px rgba(#000000, 0.1);
+  }
 }
 
 .catalog-video__title {
+  position: relative;
   padding: 25px 40px 27px 90px;
   margin: 0;
   font-size: 17px;
   line-height: 1.4em;
   font-weight: 700;
   color: #000000;
-  outline: 1px solid red;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 32px;
+    height: 32px;
+    background: url("../img/icon-video.svg") no-repeat;
+  }
 }
 
 .catalog-video__player {
+  position: relative;
   width: 260px;
   height: 150px;
   margin: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 102px;
+    height: 78px;
+    transform: translate(-50%, -50%);
+    background: url("../img/icon-play.svg") no-repeat;
+  }
+
+  &:hover::after {
+    width: 123px;
+    height: 94px;
+    background-size: cover;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+    width: 82px;
+    height: 63px;
+    background-size: cover;
+  }
 }
 
 .catalog-video p {
-  padding: 30px 43px 0 30px;
-  margin-top: -6px;
+  padding: 30px 43px 0 33px;
+  margin-top: 0;
   font-size: 13px;
   line-height: 1.8em;
-  outline: 1px solid red;
 }
 
 .catalog-video__order {
@@ -44,10 +86,14 @@
   .catalog-video__title {
     order: 2;
     width: 100%;
-    padding: 39px 0 39px 108px;
+    padding: 39px 0 32px 108px;
     font-size: 20px;
     line-height: 1.2em;
-    outline: 1px solid red;
+
+    &::before {
+      top: 32px;
+      left: 43px;
+    }
   }
 
   .catalog-video__player {
@@ -64,13 +110,12 @@
     margin: 0;
     font-size: 15px;
     line-height: 2em;
-    outline: 1px solid red;
   }
 
   .catalog-video__order {
     order: 4;
     width: 584px;
-    margin: 43px auto;
+    margin: 33px auto 45px auto;
   }
 }
 
@@ -85,8 +130,12 @@
     order: 2;
     width: 33.4%;
     box-sizing: border-box;
-    padding: 95px 140px 35px 60px;
-    outline: 1px solid red;
+    padding: 95px 140px 33px 60px;
+
+    &::before {
+      top: 40px;
+      left: 65px;
+    }
   }
 
   .catalog-video__player {
@@ -100,12 +149,11 @@
     width: 33.4%;
     box-sizing: border-box;
     padding: 0 68px 0 60px;
-    outline: 1px solid red;
   }
 
   .catalog-video__order {
     order: 4;
     width: 231px;
-    margin: 52px auto;
+    margin: 45px 0 0 65px;
   }
 }

@@ -2,25 +2,25 @@
   padding: 1px 0 39px 0;
   margin: 0;
 }
+
 .contacts-wrapper {
   display: flex;
   flex-direction: column;
+  max-width: 100%;
   width: 320px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid green;
 }
 
 .contacts__title {
   width: 100%;
   box-sizing: border-box;
   padding-left: 30px;
-  margin: 40px 0 40px 0;
+  margin: 40px 0 25px 0;
   font-size: 18px;
   line-height: 1.7em;
   font-weight: 700;
   color: #000000;
-  outline: 1px solid red;
 }
 
 .contacts__item {
@@ -33,13 +33,24 @@
   margin-right: auto;
   font-size: 15px;
   line-height: 2em;
-  outline: 1px solid red;
 }
 
 .contacts__item p {
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   margin: 0;
-  outline: 1px solid pink;
+}
+
+.contacts__item a {
+  color: #444444;
+  text-decoration: none;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__name {
@@ -50,15 +61,52 @@
   width: 71.1%;
 }
 
+.contacts__value--mishka {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 2px;
+    width: 96%;
+    height: 1px;
+    background-color: #62d1ba;
+  }
+}
+
+.contacts__map--wrapper {
+  max-width: 100%;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts__map--wrapper img {
+  max-width: 100%;
+}
+
 .contacts__map {
-  display: block;
-  margin: 0 auto 40px auto;
-  outline: 1px solid red;
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 30px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 46%;
+    left: 49%;
+    width: 67px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    background: url("../img/icon-map-pin.svg") no-repeat;
+  }
 }
 
 .contacts__write-wrapper {
+  max-width: 100%;
   width: 260px;
-  margin: 39px auto 0 auto;
+  margin: 30px auto 0 auto;
 }
 
 .contacts__write {
@@ -67,28 +115,39 @@
 
 @media ($tablet-widths) {
   .contacts {
-    padding: 60px 0;
+    padding: 63px 0 58px 0;
+    background: url("../img/bg-zigzag-line.svg") repeat-X 0 0;
+    background-size: 768px 25px;
   }
 
   .contacts-wrapper {
+    max-width: 100%;
     width: 768px;
-    outline: 1px solid green;
   }
 
   .contacts__title {
-    padding-left: 50px;
-    margin: 0 auto 57px auto;
+    position: relative;
+    padding-left: 45px;
+    margin: 0 auto 38px auto;
     font-size: 43px;
     line-height: 1.7em;
-    outline: 1px solid red;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -2px;
+      right: 52px;
+      width: 47px;
+      height: 81px;
+      background: url("../img/icon-flag.svg") no-repeat;
+   }
   }
 
   .contacts__item {
     width: 86.9%;
-    padding-bottom: 60px;
+    padding-bottom: 58px;
     font-size: 17px;
     line-height: 1.8em;
-    outline: 1px solid red;
   }
 
   .contacts__item p {
@@ -104,16 +163,19 @@
     width: 38%;
   }
 
-  .contacts__map {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-    outline: 1px solid red;
+  .contacts__map--wrapper {
+    max-width: 100%;
+    width: 768px;
+    margin-top: 0;
+  }
+
+  .contacts__map--wrapper img {
+    max-width: 100%;
   }
 
   .contacts__write-wrapper {
     width: 230px;
-    margin: 60px auto 0 auto;
+    margin: 48px auto 0 auto;
   }
 }
 
@@ -125,43 +187,45 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
+    max-width: 100%;
     width: 1050px;
     height: 562px;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px solid blue;
+    background: none;
   }
 
   .contacts-wrapper {
     order: 1;
     width: 50%;
-
   }
 
   .contacts__title {
     box-sizing: border-box;
-    padding-left: 175px;
-    margin-top: 77px;
+    padding-left: 170px;
+    margin-top: 75px;
     margin-bottom: 45px;
     font-size: 53px;
     line-height: 1.1em;
-    outline: 1px solid red;
+
+    &::after {
+      top: -7px;
+      left: 65px;
+    }
   }
 
   .contacts__item {
     padding-left: 175px;
     margin: 0;
     padding-bottom: 0;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     font-size: 17px;
     line-height: 1.8em;
-    outline: 1px solid red;
   }
 
   .contacts__item p {
     padding-bottom: 40px;
     margin: 0;
-    outline: 1px solid pink;
   }
 
   .contacts__name {
@@ -175,6 +239,7 @@
   .contacts__map {
     order: 4;
     width: 50%;
+    padding-top: 3px;
     margin: 0;
   }
 
@@ -182,11 +247,9 @@
     order: 3;
     width: 50%;
     margin-top: 0;
-    outline: 1px solid blue;
   }
 
   .contacts__write {
     margin: 0 119px 0 175px;
-    outline: 1px solid blue;
   }
 }

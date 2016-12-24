@@ -1,6 +1,9 @@
 .production {
-  padding: 1px 0 35px 0;
+  position: relative;
+  padding: 1px 0 50px 0;
   margin: 0;
+  background: url("../img/bg-zigzag-line.svg") repeat-X 0 815px;
+  background-size: 320px 15px;
 }
 
 .production__title {
@@ -8,9 +11,8 @@
   line-height: 1.2em;
   font-weight: 700;
   color: #000000;
-  margin-top: 20px;
-  margin-bottom: 13px;
-  outline: 1px solid red;
+  margin-top: 25px;
+  margin-bottom: 7px;
 }
 
 .production__caption {
@@ -20,19 +22,17 @@
   color: #63d1bb;
   margin: 0;
   text-transform: uppercase;
-  outline: 1px solid red;
 }
 
 .production__description {
-  margin: 30px 0;
-  outline: 1px solid red;
+  margin-top: 25px;
+  margin-bottom: 18px;
 }
 
 .production__items-for-sale {
   display: table;
   width: 100%;
-  margin-bottom: 29px;
-  outline: 1px solid red;
+  margin-bottom: 32px;
 }
 
 .production__items__row {
@@ -41,13 +41,13 @@
 
 .production__items-for-sale p {
   display: table-cell;
-  padding: 11px 0;
+  padding: 7px 0;
   border-bottom: 1px solid #ececec;
 }
 
 .production__img {
   display: block;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 }
 
 .production__price {
@@ -57,7 +57,6 @@
   color: #444444;
   text-align: center;
   margin-bottom: 27px;
-  outline: 1px solid red;
 }
 
 .production__order {
@@ -67,14 +66,15 @@
 
 @media ($tablet-widths) {
   .production {
-    padding: 60px 0 52px 0;
+    padding: 45px 0 65px 0;
+    background: url("../img/bg-zigzag-line.svg") repeat-X 0 603px;
+    background-size: 768px 25px;
   }
 
   .production__title-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    outline: 1px solid green;
   }
 
   .production__title {
@@ -82,7 +82,6 @@
     font-size: 43px;
     line-height: 1.2em;
     font-weight: 700;
-    padding: 0;
     margin: 0;
   }
 
@@ -90,14 +89,13 @@
     box-sizing: border-box;
     width: 25%;
     text-align: center;
-    padding: 10px 27px 10px 68px;
+    padding: 12px 27px 8px 68px;
     margin-right: 0;
   }
 
   .production__content-wrapper {
     position: relative;
-    margin-top: 55px;
-    outline: 1px solid green;
+    margin-top: 50px;
   }
 
   .production__description {
@@ -105,81 +103,96 @@
     width: 43.4%;
     font-size: 17px;
     line-height: 1.8em;
-    outline: 1px solid red;
   }
 
   .production__items-for-sale {
-    margin: 45px 0;
+    margin: 40px 0;
     width: 43.4%;
-    outline: 1px solid red;
   }
 
   .production__items-for-sale p {
+    padding: 8px 0;
     font-size: 15px;
     line-height: 1.3em;
   }
 
   .production__img {
     position: absolute;
-    top: 0;
+    top: 7px;
     right: 0;
   }
 
   .production__price {
-    margin-left: 0;
     width: 43.4%;
+    margin-top: 63px;
+    margin-left: 0;
+    font-size: 20px;
+    line-height: 1.2em;
   }
 
   .production__order {
-    margin-left: 0;
     width: 43.4%;
+    margin-top: 35px;
+    margin-left: 0;
   }
 }
 
 @media ($desktop-widths) {
   .production {
-    padding: 125px 0 71px 0;
-    background: url("../img/triple-set-mobile@1x.jpg") no-repeat 525px 72px;
+    padding: 115px 0 71px 0;
+  }
+
+  .production--background {
+    max-width: 100%;
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url("../img/triple-set-desktop@1x.jpg") no-repeat 525px 62px;
+
+    @media (min-width: 1150px) and (min-resolution: 144dpi),
+           (min-width: 1150px) and (min-resolution: 1.5dppx) {
+             background-image: url("../img/triple-set-desktop@2x.jpg");
+             background-size: 575px auto;
+    }
   }
 
   .production__title-wrapper {
     flex-direction: row-reverse;
     justify-content: flex-end;
-    outline: 1px solid green;
+    position: relative;
   }
 
   .production__title {
-    width: 83.3%;
+    width: 83.5%;
     font-size: 53px;
     line-height: 1.1em;
   }
 
   .production__caption {
     box-sizing: border-box;
-    width: 16.7%;
+    width: 16.5%;
     text-align: center;
-    padding: 12px 50px;
+    padding-top: 16px;
+    padding-left: 16px;
   }
 
   .production__content-wrapper {
     position: relative;
     box-sizing: border-box;
-    margin-top: 55px;
     padding-left: 175px;
-    outline: 1px solid green;
   }
 
   .production__description {
-    margin: 60px 0;
+    margin: 50px 0;
     width: 33%;
   }
 
   .production__items-for-sale {
-    margin-bottom: 110px;
+    margin-bottom: 118px;
     width: 33%;
   }
 
-  .production__img {
+  .production picture {
     display: none;
   }
 

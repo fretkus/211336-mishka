@@ -2,13 +2,20 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header  container">
       <div class="page-header__logo">
-        <a><img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка"></a>
+        <a class="logo-main">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" alt="Логотип Мишка">
+          </picture>
+        </a>
       </div>
       <nav class="main-nav  container">
         <button class="main-nav__toggle  main-nav__toggle--open  main-nav__toggle--close  main-nav__toggle--nojs" type="button">Меню</button>
@@ -32,52 +39,65 @@
             <a class="main-nav__link  main-nav__link--sale" href="#">Распродажа</a>
           </li>
         </ul>
+        <div class="main-nav__text">Бесплатная доставка по России</div>
       </nav>
     </header>
     <main>
-      <section class="banner">
-        <h1 class="banner__title">Милые штуки ручной<br> работы для дома</h1>
-        <ul class="banner__list  container">
-          <li class="banner__item  banner__item--interior"><a href="#">Предметы интерьера</a></li>
-          <li class="banner__item  banner__item--toy"><a href="#">Детские игрушки</a></li>
+      <section class="banner  banner--photo-background">
+        <h1 class="banner__title  banner__title--index">Милые штуки ручной<br> работы для дома</h1>
+        <ul class="banner__list">
+          <li class="banner__list-item">
+            <a class="banner__list-link  banner__list-link--interior" href="#">Предметы<br>интерьера</a>
+          </li>
+          <li class="banner__list-item">
+            <a class="banner__list-link  banner__list-link--toys" href="#">Детские<br>игрушки</a>
+          </li>
         </ul>
       </section>
-      <section class="production  container">
-        <div class="production__title-wrapper">
-          <h2 class="production__title">Вязаные корзинки</h2>
-          <p class="production__caption">Товар недели</p>
-        </div>
-        <div class="production__content-wrapper">
-          <p class="production__description">Экологически чистая пряжа, ручная работа. Доступны в шести<br> расцветках, и трех размерах.</p>
-          <div class="production__items-for-sale">
-            <div class="production__items__row">
-              <p class="production__name">Цвет:</p>
-              <p class="production__value">«Тиффани»/серый</p>
-            </div>
-            <div class="production__items__row">
-              <p class="production__name">Диаметр:</p>
-              <p class="production__value">25 см</p>
-            </div>
-            <div class="production__items__row">
-              <p class="production__name">Высота:</p>
-              <p class="production__value">15 см</p>
-            </div>
+      <section class="production  production--background">
+        <div class="container">
+          <div class="production__title-wrapper">
+            <h2 class="production__title">Вязаные корзинки</h2>
+            <p class="production__caption">Товар недели</p>
           </div>
-          <img class="production__img" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязанные корзинки">
-          <p class="production__price">Цена: 990 руб.</p>
-          <a class="btn  production__order" href="#">Заказать</a>
+          <div class="production__content-wrapper">
+            <p class="production__description">Экологически чистая пряжа, ручная работа. Доступны в шести<br> расцветках, и трех размерах.</p>
+            <div class="production__items-for-sale">
+              <div class="production__items__row">
+                <p class="production__name">Цвет:</p>
+                <p class="production__value">«Тиффани»/серый</p>
+              </div>
+              <div class="production__items__row">
+                <p class="production__name">Диаметр:</p>
+                <p class="production__value">25 см</p>
+              </div>
+              <div class="production__items__row">
+                <p class="production__name">Высота:</p>
+                <p class="production__value">15 см</p>
+              </div>
+            </div>
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <img class="production__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязанные корзинки">
+            </picture>
+            <p class="production__price">Цена: 990 руб.</p>
+            <a class="btn  production__order" href="#">Заказать</a>
+          </div>
         </div>
       </section>
-      <section class="about-us  container">
-        <h2 class="about-us__title">Коротко о нас:</h2>
-        <ul class="about-us__list">
-          <li class="about-us__item  about-us__item--material">Экологически<br> чистые материалы</li>
-          <li class="about-us__item  about-us__item--style">Скандинавский стиль<br> по российской цене</li>
-          <li class="about-us__item  about-us__item--like">Увеличивает лайки<br> на фотографиях</li>
-          <li class="about-us__item  about-us__item--handmade">Связано вручную с<br> любовью и умилением</li>
-          <li class="about-us__item  about-us__item--russian">Поддержка отчественного<br> производителя</li>
-          <li class="about-us__item  about-us__item--gift">Поставляется в<br> подарочной упаковке</li>
-        </ul>
+      <section class="about-us">
+        <div class="container">
+          <h2 class="about-us__title">Коротко о нас:</h2>
+          <ul class="about-us__list">
+            <li class="about-us__item  about-us__item--material">Экологически<br> чистые материалы</li>
+            <li class="about-us__item  about-us__item--style">Скандинавский стиль<br> по российской цене</li>
+            <li class="about-us__item  about-us__item--like">Увеличивает лайки<br> на фотографиях</li>
+            <li class="about-us__item  about-us__item--handmade">Связано вручную с<br> любовью и умилением</li>
+            <li class="about-us__item  about-us__item--russian">Поддержка отчественного<br> производителя</li>
+            <li class="about-us__item  about-us__item--gift">Поставляется в<br> подарочной упаковке</li>
+          </ul>
+        </div>
       </section>
       <section class="reviews">
         <div class="reviews-wrapper  container">
@@ -99,12 +119,18 @@
           <h2 class="contacts__title">Контакты</h2>
             <div class="contacts__item">
               <p class="contacts__name">e-mail:</p>
-              <p class="contacts__value">info@mimimishkashop.ru</p>
+              <a class="contacts__value  contacts__value--mishka" href="#">info@mimimishkashop.ru</a>
               <p class="contacts__name">адрес:</p>
               <p class="contacts__value">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</p>
             </div>
         </div>
-        <img class="contacts__map  container--map" src="img/map-mobile@1x.jpg" width="320" height="457" alt="Карта проезда">
+        <div class="contacts__map  contacts__map--wrapper">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
+            <img src="img/map-mobile@1x.jpg" alt="Карта">
+          </picture>
+        </div>
         <div class="contacts__write-wrapper">
           <a class="btn  contacts__write" href="#">Напишите нам</a>
         </div>
@@ -112,22 +138,13 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper  container">
-        <section class="page-footer__logo">
-          <a href="index.html">
-            <img src="img/logo-mobile.svg" width="86" height="36" alt="Мишка">
-          </a>
-        </section>
-        <section class="page-footer__social">
-          <ul class="social-links">
-            <li class="social-link  social-link--inst"><a href="#">Instagram</a></li>
-            <li class="social-link  social-link--fb"><a href="#">Facebook</a></li>
-            <li class="social-link  social-link--tw"><a href="#">Twitter</a></li>
-          </ul>
-        </section>
-        <section class="page-footer__copyright">
-          <span class="page-footer__copyright-developed">Разработано</span>
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
-        </section>
+        <a href="index.html" class="page-footer__logo  page-footer__logo--hidden  logo-main"><img src="img/logo-footer.svg" width="102" height="35" alt="Логотип Мишка"></a>
+        <div class="page-footer__social  social-links">
+          <a href="#" class="social__link  social__link--inst">Instagram</a>
+          <a href="#" class="social__link  social__link--fb">Facebook</a>
+          <a href="#" class="social__link  social__link--tw">Twitter</a>
+        </div>
+        <a href="https://htmlacademy.ru/" class="page-footer__copyright">Разработано <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Лого HTML Academy"></a>
       </div>
     </footer>
     <div class="cart-popup">
@@ -144,5 +161,6 @@
       </form>
     </div>
     <div class="overlay"></div>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>

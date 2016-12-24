@@ -10,7 +10,6 @@
   box-shadow: 0 5px 10px rgba(0,0,0,0.25);
   transform: translateX(-50%);
   z-index: 20;
-  outline: 1px solid blue;
 }
 
 .cart-popup__title {
@@ -23,12 +22,10 @@
   margin-top: 30px;
   text-transform: uppercase;
   text-align: center;
-  outline: 1px solid red;
 }
 
 .cart-popup__form {
   position: relative;
-  outline: 1px solid red;
 }
 
 .cart-popup__choise {
