@@ -127,14 +127,17 @@
   font-size: 17px;
   line-height: 1.1em;
   font-weight: 700;
+  color: #000000;
 }
 
 .order-form__text {
   flex-grow: 1;
   margin-top: 10px;
   padding-bottom: 20px;
+  font-family: "Open Sans";
   font-size: 17px;
   line-height: 1.1em;
+  color: #000000;
   border: none;
   border-bottom: 2px solid #000000;
 
@@ -199,6 +202,10 @@ input[type="text"]::-webkit-input-placeholder,
 input[type="email"]::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder,
 .order-form__text--tel::-webkit-input-placeholder {
+  font-family: "Open Sans";
+  font-size: 17px;
+  line-height: 1.1em;
+  color: #444444;
   font-weight: 400;
   opacity: 0.3;
 }
@@ -207,6 +214,10 @@ input[type="text"]::-moz-placeholder,
 input[type="email"]::-moz-placeholder,
 textarea::-moz-placeholder,
 .order-form__text--tel::-moz-placeholder {
+  font-family: "Open Sans";
+  font-size: 17px;
+  line-height: 1.1em;
+  color: #444444;
   font-weight: 400;
   opacity: 0.3;
 }
@@ -215,6 +226,10 @@ input[type="text"]:-ms-input-placeholder,
 input[type="email"]:-ms-input-placeholder,
 textarea:-ms-input-placeholder,
 .order-form__text--tel:-ms-input-placeholder {
+  font-family: "Open Sans";
+  font-size: 17px;
+  line-height: 1.1em;
+  color: #444444;
   font-weight: 400;
   opacity: 0.3;
 }
@@ -223,6 +238,10 @@ input[type="text"]:-moz-placeholder,
 input[type="email"]:-moz-placeholder,
 textarea:-moz-placeholder,
 .order-form__text--tel:-moz-placeholder {
+  font-family: "Open Sans";
+  font-size: 17px;
+  line-height: 1.1em;
+  color: #444444;
   font-weight: 400;
   opacity: 0.3;
 }
@@ -245,8 +264,10 @@ textarea:-moz-placeholder,
   height: 110px;
   padding: 15px;
   margin-top: 0;
+  font-family: "Open Sans";
   font-size: 17px;
   line-height: 1.1em;
+  color: #000000;
   border: 2px solid #000000;
   outline: none;
   resize: none;
@@ -387,6 +408,34 @@ textarea:-moz-placeholder,
 
   .order-form__label--name:last-of-type {
     margin-bottom: 0px;
+  }
+
+  input[type="text"]::-webkit-input-placeholder,
+  input[type="email"]::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder,
+  .order-form__text--tel::-webkit-input-placeholder {
+    font-size: 19px;
+  }
+
+  input[type="text"]::-moz-placeholder,
+  input[type="email"]::-moz-placeholder,
+  textarea::-moz-placeholder,
+  .order-form__text--tel::-moz-placeholder {
+    font-size: 19px;
+  }
+
+  input[type="text"]:-ms-input-placeholder,
+  input[type="email"]:-ms-input-placeholder,
+  textarea:-ms-input-placeholder,
+  .order-form__text--tel:-ms-input-placeholder {
+    font-size: 19px;
+  }
+
+  input[type="text"]:-moz-placeholder,
+  input[type="email"]:-moz-placeholder,
+  textarea:-moz-placeholder,
+  .order-form__text--tel:-moz-placeholder {
+    font-size: 19px;
   }
 
   .order-form__text {
