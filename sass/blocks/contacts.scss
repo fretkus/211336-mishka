@@ -163,6 +163,11 @@
     width: 38%;
   }
 
+  .contacts__value--mishka {
+    width: 31.5%;
+    margin-right: 40px;
+  }
+
   .contacts__map--wrapper {
     max-width: 100%;
     width: 768px;
@@ -181,15 +186,14 @@
 
 @media ($desktop-widths) {
   .contacts {
+    position: relative;
     padding-top: 70px;
-    padding-bottom: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
     max-width: 100%;
     width: 1050px;
-    height: 562px;
     margin-left: auto;
     margin-right: auto;
     background: none;
@@ -198,6 +202,7 @@
   .contacts-wrapper {
     order: 1;
     width: 50%;
+    margin-bottom: 100px;
   }
 
   .contacts__title {
@@ -215,10 +220,11 @@
   }
 
   .contacts__item {
+    box-sizing: content-box;
     padding-left: 175px;
     margin: 0;
     padding-bottom: 0;
-    margin-bottom: 30px;
+    margin-bottom: 23px;
     font-size: 17px;
     line-height: 1.8em;
   }
@@ -233,20 +239,32 @@
   }
 
   .contacts__value {
-    width: 80%;
+    width: 50%;
+  }
+
+  .contacts__value--mishka {
+    width: 65%;
+
+    &::after {
+      width: 68%;
+    }
   }
 
   .contacts__map {
-    order: 4;
+    order: 2;
     width: 50%;
     padding-top: 3px;
     margin: 0;
   }
 
   .contacts__write-wrapper {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
     order: 3;
     width: 50%;
     margin-top: 0;
+    margin-left: 0;
   }
 
   .contacts__write {

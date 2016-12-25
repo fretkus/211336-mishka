@@ -61,7 +61,7 @@
             <p class="production__caption">Товар недели</p>
           </div>
           <div class="production__content-wrapper">
-            <p class="production__description">Экологически чистая пряжа, ручная работа. Доступны в шести<br> расцветках, и трех размерах.</p>
+            <p class="production__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
             <div class="production__items-for-sale">
               <div class="production__items__row">
                 <p class="production__name">Цвет:</p>
@@ -82,7 +82,7 @@
               <img class="production__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязанные корзинки">
             </picture>
             <p class="production__price">Цена: 990 руб.</p>
-            <a class="btn  production__order" href="#">Заказать</a>
+            <a class="btn  production__order" href="form.html">Заказать</a>
           </div>
         </div>
       </section>
@@ -121,7 +121,7 @@
               <p class="contacts__name">e-mail:</p>
               <a class="contacts__value  contacts__value--mishka" href="#">info@mimimishkashop.ru</a>
               <p class="contacts__name">адрес:</p>
-              <p class="contacts__value">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</p>
+              <p class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
             </div>
         </div>
         <div class="contacts__map  contacts__map--wrapper">
@@ -132,7 +132,7 @@
           </picture>
         </div>
         <div class="contacts__write-wrapper">
-          <a class="btn  contacts__write" href="#">Напишите нам</a>
+          <a class="btn  contacts__write" href="write.html">Напишите нам</a>
         </div>
       </section>
     </main>
@@ -151,12 +151,14 @@
       <h2 class="cart-popup__title">Добавить в корзину</h2>
       <form class="cart-popup__form" action="#" method="post">
         <p class="cart-popup__choise">Выберите размер:</p>
-        <input class="cart-popup__input  cart-popup__input--size-s" type="radio" name="size" value="size-s" id="size-s" checked>
-        <label class="cart-popup__label" for="size-s">S</label>
-        <input class="cart-popup__input  cart-popup__input--size-m" type="radio" name="size" value="size-m" id="size-m">
-        <label class="cart-popup__label" for="size-m">M</label>
-        <input class="cart-popup__input  cart-popup__input--size-l" type="radio" name="size" value="size-l" id="size-l">
-        <label class="cart-popup__label" for="size-l">L</label>
+        <div class="cart-popup__input-wrapper">
+          <input class="cart-popup__input  cart-popup__input--size-s" type="radio" name="size" value="size-s" id="size-s" checked>
+          <label class="cart-popup__label" for="size-s">S</label>
+          <input class="cart-popup__input  cart-popup__input--size-m" type="radio" name="size" value="size-m" id="size-m">
+          <label class="cart-popup__label" for="size-m">M</label>
+          <input class="cart-popup__input  cart-popup__input--size-l" type="radio" name="size" value="size-l" id="size-l">
+          <label class="cart-popup__label" for="size-l">L</label>
+        </div>
         <input class="cart-popup__btn" type="submit" value="Добавить">
       </form>
     </div>

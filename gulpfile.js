@@ -34,7 +34,7 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
+  gulp.watch("*.html", ['html', server.reload]);
 });
 
 gulp.task("copy", function() {
@@ -58,14 +58,21 @@ gulp.task("images", function() {
     .pipe(gulp.dest("build/img"));
 })
 
+gulp.task('html', function() {
+  return gulp.src('*.html')
+    .pipe(gulp.dest('build'));
+})
+
 gulp.task("clean", function() {
  return del("build");
 });
 
 gulp.task("build", function(fn) {
   run(
+    "clean",
     "copy",
     "style",
+    "images",
     fn
     )
 });
