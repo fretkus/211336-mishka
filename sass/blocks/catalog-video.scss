@@ -35,6 +35,7 @@
 .catalog-video__player {
   position: relative;
   width: 260px;
+  max-width: 100%;
   height: 150px;
   margin: 0;
 
@@ -61,6 +62,10 @@
     height: 63px;
     background-size: cover;
   }
+}
+
+.catalog-video img {
+  max-width: 100%;
 }
 
 .catalog-video p {

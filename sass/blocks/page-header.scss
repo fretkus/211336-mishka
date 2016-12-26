@@ -12,6 +12,14 @@
 .page-header__logo a {
   display: block;
   text-align: center;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media ($tablet-widths) {

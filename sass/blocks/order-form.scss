@@ -56,6 +56,10 @@
     border-radius: 50%;
   }
 
+  &:hover::before {
+    border-color: #63d1ba;
+  }
+
   &:active::before {
     border-color: #c7c7c7;
   }
@@ -98,6 +102,10 @@
     border: 2px solid #444444;
   }
 
+  &:hover::before {
+    border-color: #63d1ba;
+  }
+
   &:active::before {
     border-color: #c7c7c7;
   }
@@ -128,6 +136,7 @@
   line-height: 1.1em;
   font-weight: 700;
   color: #000000;
+
 }
 
 .order-form__text {
@@ -159,10 +168,7 @@
     width: 30px;
     height: 30px;
     background: url("../img/icon-phone.svg") no-repeat center;
-
-    &:hover {
-      background: url("../img/icon-phone-hvr.svg") no-repeat center;
-    }
+    filter: grayscale(1);
   }
 
   &--email-icon {
@@ -173,11 +179,12 @@
     width: 30px;
     height: 30px;
     background: url("../img/icon-mail.svg") no-repeat center;
-    border-color: #000000;
+    filter: grayscale(1);
+  }
 
-    &:hover {
-      background: url("../img/icon-mail-hvr.svg") no-repeat center;
-    }
+  &:hover {
+    outline: none;
+    border-color: #62d1ba;
   }
 
   &:focus {
@@ -186,12 +193,24 @@
   }
 }
 
+.order-form__text--tel:hover + .order-form__text--tel-icon {
+  background: url("../img/icon-phone.svg") no-repeat center;
+  filter: grayscale(0);
+}
+
 .order-form__text--tel:focus + .order-form__text--tel-icon {
-  background: url("../img/icon-phone-hvr.svg") no-repeat center;
+  background: url("../img/icon-phone.svg") no-repeat center;
+  filter: grayscale(0);
+}
+
+.order-form__text--email:hover + .order-form__text--email-icon {
+  background: url("../img/icon-mail.svg") no-repeat center;
+  filter: grayscale(0);
 }
 
 .order-form__text--email:focus + .order-form__text--email-icon {
-  background: url("../img/icon-mail-hvr.svg") no-repeat center;
+  background: url("../img/icon-mail.svg") no-repeat center;
+  filter: grayscale(0);
 }
 
 .order-form__order {
@@ -271,6 +290,10 @@ textarea:-moz-placeholder,
   border: 2px solid #000000;
   outline: none;
   resize: none;
+
+  &:hover {
+    border-color: #62d1ba;
+  }
 
   &:focus {
     border-color: #62d1ba;
